@@ -59,20 +59,20 @@ export default function Home() {
         <meta name="description" content="Join the Rave revolution. Earn through affiliate marketing and sales." />
       </Head>
 
-      {/* Simple Navigation */}
+      {/* Original Navigation */}
       <nav ref={navRef} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-black/90 backdrop-blur-sm' : 'bg-black/90 backdrop-blur-sm'
+        scrolled ? 'bg-black/10 backdrop-blur-sm' : 'bg-black/10 backdrop-blur-sm'
       }`}>
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between py-4">
-            {/* Simple Logo */}
+            {/* Original Logo */}
             <Link href="/" className="relative group">
               <div className="flex items-center space-x-3">
                 <span className="text-white font-bold text-2xl tracking-tight">RAVE</span>
               </div>
             </Link>
 
-            {/* Simple Menu Button */}
+            {/* Original Menu Button */}
             <button className="bg-white/20 text-white px-4 py-2 rounded-lg hover:bg-white/30 transition-all">
               Get Started
             </button>
@@ -82,20 +82,55 @@ export default function Home() {
 
       <div className="h-20"></div>
 
-      {/* Simple Hero Section */}
-      <section ref={heroRef} className="relative bg-black pt-20 min-h-screen flex items-center">
+      {/* Original Hero Section with Grid and Stardust */}
+      <section ref={heroRef} className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 pt-20 min-h-screen flex items-center overflow-hidden">
+        {/* Animated grid background */}
+        <div className="absolute inset-0">
+          <div className="grid-background absolute inset-0" style={{
+            backgroundImage: `
+              linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px',
+            animation: 'gridMove 20s linear infinite',
+          }}></div>
+          
+          {/* Star dust particles */}
+          {[...Array(50)].map((_, i) => (
+            <div 
+              key={`stardust-${i}`}
+              className="absolute w-1 h-1 bg-white rounded-full opacity-70"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animation: `float ${Math.random() * 10 + 5}s linear infinite`,
+                animationDelay: `${Math.random() * 5}s`,
+                transform: `scale(${Math.random() * 0.5 + 0.5})`
+              }}
+            ></div>
+          ))}
+        </div>
+        
+        {/* Grid that reveals near cursor */}
+        <div ref={gridOverlayRef} className="grid-overlay absolute inset-0 opacity-0 transition-opacity duration-300 pointer-events-none" style={{
+          backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 60px, rgba(0,0,0,0.7) 100px), linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
+          backgroundSize: '50px 50px',
+        }}></div>
+        
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Simple badge */}
+            {/* Original badge */}
             <div className="hero-badge inline-block mb-6">
-              <span className="bg-white/10 text-white px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase border border-white/20">
+              <span className="bg-white/10 text-white px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase border border-white/20 shadow-lg transition-all duration-300">
                 The Future of Affiliate Marketing
               </span>
             </div>
             
-            {/* Simple title */}
+            {/* Original title */}
             <h1 className="hero-title text-7xl md:text-8xl font-black mb-6 text-white leading-none">
-              RAVE
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white animate-gradient" style={{backgroundSize: '200% 200%'}}>
+                RAVE
+              </span>
             </h1>
             
             <p className="hero-subtitle text-2xl md:text-3xl text-gray-300 mb-4 font-light">
@@ -105,7 +140,7 @@ export default function Home() {
               Connect. Create. Earn.
             </p>
             
-            {/* Simple CTA Buttons */}
+            {/* Original CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/register">
                 <button className="bg-white text-black px-8 py-4 rounded-lg font-bold hover:bg-gray-200 transition-all">
@@ -121,6 +156,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Original animations */}
+      <style jsx global>{`
+        @keyframes gridMove {
+          0% { transform: translate(0, 0); }
+          100% { transform: translate(50px, 50px); }
+        }
+        
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes animate-gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        
+        .animate-gradient {
+          animation: animate-gradient 3s ease infinite;
+        }
+        
+        .grid-background {
+          animation: gridMove 20s linear infinite;
+        }
+      `}</style>
     </div>
   );
 }
