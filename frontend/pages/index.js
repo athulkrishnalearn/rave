@@ -324,7 +324,6 @@ export default function Home() {
       <Head>
         <title>Rave - Connect Creators, Sales Agents & Companies</title>
         <meta name="description" content="Join the Rave revolution. Earn through affiliate marketing and sales." />
-        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet" />
       </Head>
 
       {/* Unique Expandable/Shrinkable Navigation - No Logo */}
@@ -336,7 +335,7 @@ export default function Home() {
             {/* Minimal Logo - Just Text */}
             <Link href="/" className="relative group">
               <div className="flex items-center space-x-3">
-                <span className="text-white font-black text-2xl tracking-tighter" style={{ fontFamily: 'Rampart One, cursive' }}>Rave.</span>
+                <span className="text-white font-bold text-2xl tracking-tight">RAVE</span>
               </div>
             </Link>
 
