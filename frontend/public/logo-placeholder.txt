@@ -1,0 +1,7 @@
+Place your logo.png file in this directory:
+/Users/athulkrishnakolavelivinod/rave app/rave-app/frontend/public/
+
+Recommended specifications:
+- Format: PNG (with transparent background)
+- Height: 40-50px
+- Colors: Black logo on transparent background

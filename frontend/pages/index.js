@@ -12,6 +12,7 @@ export default function Home() {
   const [navExpanded, setNavExpanded] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const heroRef = useRef(null);
+  const navRef = useRef(null);
   const gridOverlayRef = useRef(null);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const raveHeadsRef = useRef(null);
@@ -38,7 +39,7 @@ export default function Home() {
         return;
       }
 
-    // Hero Section Animations - Improved smooth animations
+        // Hero Section Animations - Improved smooth animations
     const heroTimeline = gsap.timeline({ 
       defaults: { ease: 'power3.out' },
       onStart: () => {
@@ -323,21 +324,19 @@ export default function Home() {
       <Head>
         <title>Rave - Connect Creators, Sales Agents & Companies</title>
         <meta name="description" content="Join the Rave revolution. Earn through affiliate marketing and sales." />
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet" />
       </Head>
 
-      {/* Unique Expandable/Shrinkable Navigation */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-black/95 backdrop-blur-lg shadow-2xl' : 'bg-black'
+      {/* Unique Expandable/Shrinkable Navigation - No Logo */}
+      <nav ref={navRef} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'bg-black/10 backdrop-blur-sm' : 'bg-black/10 backdrop-blur-sm'
       }`}>
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between py-4">
-            {/* Logo - Always Visible */}
+            {/* Minimal Logo - Just Text */}
             <Link href="/" className="relative group">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                  <span className="text-black font-black text-2xl">R</span>
-                </div>
-                <span className="text-white font-black text-2xl tracking-tighter hidden sm:block">RAVE</span>
+                <span className="text-white font-black text-2xl tracking-tighter" style={{ fontFamily: 'Rampart One, cursive' }}>Rave.</span>
               </div>
             </Link>
 
@@ -421,35 +420,58 @@ export default function Home() {
       </nav>
 
       {/* Spacer to prevent content from hiding under fixed nav */}
-      <div className="h-20"></div>
 
-      {/* Hero Section with CTA - Complete Black with Cursor-Revealing Grid */}
-      <section ref={heroRef} className="relative bg-black py-32 min-h-screen flex items-center">
+      {/* Hero Section with CTA - Grid and Stardust Only */}
+      <section ref={heroRef} className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 pt-20 min-h-screen flex items-center overflow-hidden">
+        {/* Animated grid background - extends to navbar area */}
+        <div className="absolute inset-0">
+          <div className="grid-background absolute inset-0" style={{
+            backgroundImage: `
+              linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px',
+            animation: 'gridMove 20s linear infinite',
+          }}></div>
+                
+          {/* Star dust particles - only stardust */}
+          {[...Array(50)].map((_, i) => (
+            <div 
+              key={`stardust-${i}`}
+              className="absolute w-1 h-1 bg-white rounded-full opacity-70"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animation: `float ${Math.random() * 10 + 5}s linear infinite`,
+                animationDelay: `${Math.random() * 5}s`,
+                transform: `scale(${Math.random() * 0.5 + 0.5})`
+              }}
+            ></div>
+          ))}
+        </div>
+              
         {/* Grid that reveals near cursor */}
         <div className="grid-overlay absolute inset-0 opacity-0 transition-opacity duration-300 pointer-events-none" style={{
           backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 60px, rgba(0,0,0,0.7) 100px), linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
           backgroundSize: '50px 50px',
         }}></div>
-        
+              
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Static badge */}
+            {/* Static badge - simplified */}
             <div className="hero-badge inline-block mb-6">
-              <span className="bg-white text-black px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase shadow-lg hover:shadow-white/50 transition-all duration-300 hover:scale-105">
+              <span className="bg-white/10 text-white px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase border border-white/20 shadow-lg transition-all duration-300">
                 The Future of Affiliate Marketing
               </span>
             </div>
-            
-            {/* Static title with glow effect */}
-            <h1 className="hero-title text-7xl md:text-8xl font-black mb-6 text-white leading-none relative group">
-              <span className="relative inline-block transition-all duration-500 hover:tracking-wider">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white animate-gradient" style={{backgroundSize: '200% 200%'}}>
-                  RAVE
-                </span>
-                <span className="absolute inset-0 blur-2xl opacity-50 text-white">RAVE</span>
+                  
+            {/* Static title - simplified */}
+            <h1 className="hero-title text-7xl md:text-8xl font-black mb-6 text-white leading-none">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white animate-gradient" style={{backgroundSize: '200% 200%'}}>
+                RAVE
               </span>
             </h1>
-            
+                  
             <p className="hero-subtitle text-2xl md:text-3xl text-gray-300 mb-4 font-light">
               Where Creators, Sales Agents & Companies
             </p>
@@ -459,8 +481,8 @@ export default function Home() {
             
             {/* Static CTA Buttons */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-              <Link href="/register?role=creator" className="hero-cta group relative bg-white text-black px-10 py-5 rounded-full text-lg font-bold transition-all duration-300 shadow-2xl hover:shadow-white/50 overflow-hidden">
-                <span className="absolute inset-0 bg-gradient-to-r from-gray-100 via-white to-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+              <Link href="/register?role=creator" className="hero-cta group relative bg-white/10 backdrop-blur-md text-white px-10 py-5 rounded-full text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:bg-white/20 overflow-hidden border border-white/20">
+                <span className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/30 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
                 <span className="relative flex items-center justify-center">
                   Join as Creator
                   <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -469,8 +491,8 @@ export default function Home() {
                 </span>
               </Link>
               
-              <Link href="/register?role=sales" className="hero-cta group relative bg-gray-800 text-white px-10 py-5 rounded-full text-lg font-bold transition-all duration-300 shadow-xl hover:shadow-gray-500/50 overflow-hidden border-2 border-gray-700 hover:border-white">
-                <span className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+              <Link href="/register?role=sales" className="hero-cta group relative bg-white/5 backdrop-blur-md text-white px-10 py-5 rounded-full text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:bg-white/20 overflow-hidden border border-white/20">
+                <span className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/20 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
                 <span className="relative flex items-center justify-center">
                   Join as Sales Agent
                   <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -479,8 +501,8 @@ export default function Home() {
                 </span>
               </Link>
               
-              <Link href="/register?role=freelancer" className="hero-cta group relative bg-transparent text-white px-10 py-5 rounded-full text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-white/30 border-2 border-white hover:bg-white hover:text-black overflow-hidden">
-                <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <Link href="/register?role=freelancer" className="hero-cta group relative bg-transparent backdrop-blur-md text-white px-10 py-5 rounded-full text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:bg-white/20 overflow-hidden border border-white/20">
+                <span className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/20 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
                 <span className="relative flex items-center justify-center">
                   Join as Freelancer
                   <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -623,6 +645,11 @@ export default function Home() {
           0%, 100% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
         }
+        
++       @keyframes gridMove {
++         0% { transform: translate(0, 0); }
++         100% { transform: translate(50px, 50px); }
++       }
         
         .animate-fade-in-down {
           animation: fade-in-down 0.8s ease-out;
@@ -799,6 +826,11 @@ export default function Home() {
           50% { transform: translateY(-10px); }
         }
         
++       @keyframes shimmer {
++         0% { transform: translateX(-100%); }
++         100% { transform: translateX(100%); }
++       }
+        
         .animate-fade-in-left {
           animation: fade-in-left 1s ease-out;
         }
@@ -810,6 +842,10 @@ export default function Home() {
         .animate-bounce-slow {
           animation: bounce-slow 2s ease-in-out infinite;
         }
+        
++       .animate-shimmer {
++         animation: shimmer 2s linear infinite;
++       }
       `}</style>
 
       {/* For Sales Agents */}
