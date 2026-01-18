@@ -59,21 +59,21 @@ export default function Home() {
         <meta name="description" content="Join the Rave revolution. Earn through affiliate marketing and sales." />
       </Head>
 
-      {/* Unique Navigation with New Design Language */}
-      <nav ref={navRef} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 unique-header ${
-        scrolled ? 'bg-[rgba(13,13,26,0.9)]' : 'bg-[rgba(13,13,26,0.9)]'
+      {/* Simple Navigation */}
+      <nav ref={navRef} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'bg-black/90 backdrop-blur-sm' : 'bg-black/90 backdrop-blur-sm'
       }`}>
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between py-4">
-            {/* Minimal Logo - Just Text with New Design */}
+            {/* Simple Logo */}
             <Link href="/" className="relative group">
               <div className="flex items-center space-x-3">
-                <span className="text-white font-bold text-2xl tracking-tight gradient-text">RAVE</span>
+                <span className="text-white font-bold text-2xl tracking-tight">RAVE</span>
               </div>
             </Link>
 
-            {/* Expandable Menu Button */}
-            <button className="unique-button">
+            {/* Simple Menu Button */}
+            <button className="bg-white/20 text-white px-4 py-2 rounded-lg hover:bg-white/30 transition-all">
               Get Started
             </button>
           </div>
@@ -82,51 +82,19 @@ export default function Home() {
 
       <div className="h-20"></div>
 
-      {/* Hero Section with New Design Language */}
-      <section ref={heroRef} className="relative bg-gradient-to-br from-indigo-900 via-purple-900 to-violet-900 pt-20 min-h-screen flex items-center overflow-hidden">
-        {/* Animated grid background with new design */}
-        <div className="absolute inset-0">
-          <div className="grid-background absolute inset-0" style={{
-            backgroundImage: `
-              linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px',
-            animation: 'gridMove 20s linear infinite',
-          }}></div>
-          
-          {/* Star dust particles with new design */}
-          {[...Array(50)].map((_, i) => (
-            <div 
-              key={`stardust-${i}`}
-              className="absolute w-1 h-1 bg-white rounded-full opacity-70 floating-element"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                transform: `scale(${Math.random() * 0.5 + 0.5})`
-              }}
-            ></div>
-          ))}
-        </div>
-        
-        {/* Grid that reveals near cursor */}
-        <div ref={gridOverlayRef} className="grid-overlay absolute inset-0 transition-opacity duration-300 pointer-events-none" style={{
-          backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
-          backgroundSize: '50px 50px',
-        }}></div>
-        
-        <div className="container mx-auto px-6 relative z-10 fade-in">
+      {/* Simple Hero Section */}
+      <section ref={heroRef} className="relative bg-black pt-20 min-h-screen flex items-center">
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Static badge with new design */}
+            {/* Simple badge */}
             <div className="hero-badge inline-block mb-6">
-              <span className="unique-badge badge-primary">
+              <span className="bg-white/10 text-white px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase border border-white/20">
                 The Future of Affiliate Marketing
               </span>
             </div>
             
-            {/* Static title with new design */}
-            <h1 className="hero-title text-7xl md:text-8xl font-black mb-6 gradient-text leading-none">
+            {/* Simple title */}
+            <h1 className="hero-title text-7xl md:text-8xl font-black mb-6 text-white leading-none">
               RAVE
             </h1>
             
@@ -137,15 +105,15 @@ export default function Home() {
               Connect. Create. Earn.
             </p>
             
-            {/* Static CTA Buttons with new design */}
+            {/* Simple CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/register">
-                <button className="unique-button">
+                <button className="bg-white text-black px-8 py-4 rounded-lg font-bold hover:bg-gray-200 transition-all">
                   Join Now
                 </button>
               </Link>
               <Link href="/how-it-works">
-                <button className="unique-button unique-card">
+                <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-black transition-all">
                   Learn More
                 </button>
               </Link>
@@ -153,36 +121,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Add new animations to styles */}
-      <style jsx global>{`
-        @keyframes gridMove {
-          0% { transform: translate(0, 0); }
-          100% { transform: translate(50px, 50px); }
-        }
-        
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-        }
-        
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .grid-background {
-          animation: gridMove 20s linear infinite;
-        }
-        
-        .floating-element {
-          animation: float 6s ease-in-out infinite;
-        }
-        
-        .fade-in {
-          animation: fadeIn 0.5s ease-in;
-        }
-      `}</style>
     </div>
   );
 }
