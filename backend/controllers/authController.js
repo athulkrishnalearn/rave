@@ -41,12 +41,21 @@ exports.register = async (req, res) => {
     const finalNationalId = nationalIdNumber || nationalIdNo;
 
     // Check if user already exists
+    const queryConditions = [];
+    
+    // Add email condition
+    queryConditions.push({ email });
+    
+    // Add phone condition
+    queryConditions.push({ phone });
+    
+    // Add nationalIdNumber condition only if it's provided and not empty
+    if (finalNationalId && finalNationalId.trim() !== '' && finalNationalId !== 'pending') {
+      queryConditions.push({ nationalIdNumber: finalNationalId });
+    }
+    
     const existingUser = await User.findOne({
-      $or: [
-        { email }, 
-        { phone },
-        ...(finalNationalId ? [{ nationalIdNumber: finalNationalId }] : [])
-      ]
+      $or: queryConditions
     });
 
     if (existingUser) {
@@ -62,11 +71,23 @@ exports.register = async (req, res) => {
       email,
       phone,
       password,
-      userType: finalUserType,
-      nationalIdNumber: finalNationalId || 'pending',
-      nationalIdImage: req.file ? req.file.path : null,
-      verificationStatus: 'pending'
+      userType: finalUserType
     };
+
+    // Only add nationalIdNumber if it exists and is not the placeholder
+    if (finalNationalId && finalNationalId !== 'pending' && finalNationalId.trim() !== '') {
+      userData.nationalIdNumber = finalNationalId;
+    } else {
+      // Use a unique placeholder to satisfy unique constraint in existing DB
+      userData.nationalIdNumber = `pending_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    }
+    // Note: Don't add the field if it doesn't exist, relying on schema defaults
+
+    if (req.file) {
+      userData.nationalIdImage = req.file.path;
+    }
+
+    userData.verificationStatus = 'pending';
 
     // Create user
     const user = await User.create(userData);

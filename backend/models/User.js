@@ -37,8 +37,10 @@ const userSchema = new mongoose.Schema({
   },
   nationalIdNumber: {
     type: String,
-    required: [true, 'National ID number is required'],
-    unique: true,
+    required: false, // Made optional to allow registration without ID initially
+    // Removing unique constraint temporarily to fix registration issues
+    // unique: true, // Only make unique when we have a proper solution for null values
+    default: '', // Use empty string instead of null to avoid unique constraint issues
     trim: true
   },
   nationalIdImage: {
