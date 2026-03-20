@@ -1,0 +1,303 @@
+[
+  {
+    "title": "DAY 1: Understanding Your Gear & Camera Fundamentals",
+    "objective": "By the end of Day 1, you will know your camera’s basic settings (exposure, focus, frame rates) and be able to shoot a correctly exposed clip.",
+    "detailedContent": [
+      {
+        "title": "Your Camera – A Creative Tool, Not a Mystery",
+        "content": "**Any camera can make great videos.** The magic is not in the gear—it’s in how you use it. Today you’ll learn the essential settings that every videographer controls.\n\n**The Exposure Triangle (Video Version)**\n\nIn photography, exposure is about still images. In video, it’s about motion, but the same three elements work together:\n\n1. **Aperture (f‑stop)** – Controls how much light enters through the lens. It also affects **depth of field** (how blurry the background is).\n   - Low f‑number (e.g., f/1.8) = more light, very blurry background (shallow depth of field)\n   - High f‑number (e.g., f/16) = less light, everything in focus\n\n2. **Shutter Speed** – In video, shutter speed is tied to frame rate. The **180‑degree rule** is your friend: set shutter speed to double your frame rate.\n   - If shooting at 24 fps, shutter speed = 1/50\n   - If shooting at 30 fps, shutter speed = 1/60\n   - If shooting at 60 fps, shutter speed = 1/120\n\n   This gives you natural motion blur. Too fast = choppy video; too slow = too much blur.\n\n3. **ISO** – Your camera’s sensitivity to light.\n   - Lower ISO (100–400) = cleaner image, needs more light\n   - Higher ISO (800+) = brighter but introduces “noise” (grain)"
+      },
+      {
+        "title": "Frame Rates & Why They Matter",
+        "content": "- **24 fps** – The “cinematic” standard. Used in movies.\n- **30 fps** – Standard for TV and most online content.\n- **60 fps** – Great for slow motion (when played back at 24 or 30 fps).\n\n**Focus Modes**\n\n- **Auto‑focus (AF):** Convenient, but can hunt or shift to wrong subject.\n- **Manual focus (MF):** Gives you full control. Essential for interviews or when you want a rack focus.\n\n**Resolution**\n\n- **1080p (Full HD)** – Perfect for most uses, easier on storage.\n- **4K** – Higher quality, allows cropping in post, but larger files.\n\n**Pro Tip:** If you’re using a smartphone, download a manual camera app (like Filmic Pro or the native “Pro” mode) to control these settings."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=Nn_E_7y8mG4",
+      "title": "Camera Basics for Video: Aperture, ISO & Shutter Speed Explained",
+      "description": "Watch and take notes on how aperture, shutter speed, and ISO interact."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Get to Know Your Camera (15 minutes)",
+        "steps": [
+          "Hold your camera/phone and locate the mode dial (if any)",
+          "Identify where to change aperture, ISO, and shutter speed",
+          "Find focus settings (AF/MF switch or on‑screen controls)",
+          "Write down the make/model of your camera and note any limitations"
+        ]
+      },
+      {
+        "title": "Exercise 2: The Exposure Triangle in Practice (20 minutes)",
+        "steps": [
+          "Set up a simple scene with a subject (plant, toy, friend)",
+          "Set your camera to manual mode or use a manual video app",
+          "Choose a frame rate (e.g., 24 fps) and set shutter speed to double (1/50)",
+          "Adjust aperture and ISO for 0 exposure and record 10 seconds",
+          "Change settings individually to observe effects on brightness, blur, and noise"
+        ]
+      },
+      {
+        "title": "Exercise 3: Practice Focusing (10 minutes)",
+        "steps": [
+          "Set up two objects at different distances from the camera",
+          "Use auto‑focus to switch between them and notice behavior",
+          "Switch to manual focus and practice pulling focus smoothly"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Which setting feels most confusing right now? What did I learn about my camera’s capabilities?"
+  },
+  {
+    "title": "DAY 2: Composition & Framing",
+    "objective": "By the end of Day 2, you will be able to compose visually compelling shots using essential framing rules.",
+    "detailedContent": [
+      {
+        "title": "The Art of Visual Storytelling",
+        "content": "Composition is how you arrange elements within the frame. Good composition guides the viewer’s eye and evokes emotion.\n\n**The Rule of Thirds**\n\nImagine dividing your frame into a 3×3 grid. Place your subject along these lines or at their intersections.\n\n- **Horizon lines:** Put the horizon on the top third or bottom third.\n- **Eyes:** In a portrait, position the eyes on the top third line.\n\n**Leading Lines**\n\nUse natural lines in your scene (roads, fences, shadows) to lead the viewer’s eye toward your subject. Lines create depth and draw attention."
+      },
+      {
+        "title": "Headroom, Noseroom & Depth",
+        "content": "- **Headroom:** Space above the subject’s head. Too much looks small; too little feels cramped.\n- **Noseroom:** Leave space in the direction the subject is facing.\n\n**Depth**\n\nCreate depth by having:\n- **Foreground** element (close to the lens)\n- **Middle ground** (your subject)\n- **Background** (what’s behind)\n\n**Angles & Perspective**\n\n- **Eye level:** Neutral, relatable.\n- **Low angle:** Makes subject look powerful.\n- **High angle:** Makes subject look small/vulnerable."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=7ZpL56W4J_U",
+      "title": "8 Composition Techniques to Make Your Videos Look Professional",
+      "description": "Demonstrates rule of thirds, leading lines, and depth techniques."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Grid Practice (15 minutes)",
+        "steps": [
+          "Turn on the grid overlay in your camera/viewfinder",
+          "Frame at least 10 shots following the rule of thirds",
+          "Shoot a 5‑second clip for each"
+        ]
+      },
+      {
+        "title": "Exercise 2: Depth Exploration (10 minutes)",
+        "steps": [
+          "Find a scene with clear foreground, middle, and background",
+          "Shoot without foreground, with subtle foreground, and bold foreground",
+          "Compare clips to see how depth changes the feel"
+        ]
+      },
+      {
+        "title": "Exercise 3: Angle Challenge (10 minutes)",
+        "steps": [
+          "Pick one subject and shoot 5-second clips from eye level, low angle, and high angle",
+          "Observe the emotional difference in each clip"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Which composition technique feels most natural to me? Which one will I need to practice more?"
+  },
+  {
+    "title": "DAY 3: Lighting Basics",
+    "objective": "By the end of Day 3, you will understand how to shape light for video using natural and simple artificial sources.",
+    "detailedContent": [
+      {
+        "title": "Painting with Light",
+        "content": "Light is the raw material of videography. Great lighting can make a smartphone video look cinematic.\n\n**Characteristics of Light**\n\n1. **Intensity** – Brightness.\n2. **Direction** – Front, side, back, top, bottom.\n3. **Quality** – Hard (direct) or Soft (diffused).\n4. **Color** – Measured in Kelvin (K). Daylight (~5600K) vs Tungsten (~3200K).\n\n**Three‑Point Lighting (The Classic Setup)**\n\n- **Key Light:** Main light, 45° angle, slightly above eye level.\n- **Fill Light:** Fills shadows, less intense than key.\n- **Back Light:** Separates subject from background, adds depth."
+      },
+      {
+        "title": "Natural Light Strategies",
+        "content": "**Golden Hour:** Hour after sunrise and before sunset. Soft and warm.\n\n**Window Light:** Huge, soft light source. Position subject near window (key) and use white board for fill.\n\n**Shooting Outdoors:** Avoid harsh midday sun. Find open shade or use a diffuser/reflector to manage harsh shadows."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=j_Sj9LId698",
+      "title": "Lighting for Video: Three‑Point Lighting Explained",
+      "description": "Shows how to set up key, fill, and back lights using affordable gear."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Find and Observe Light (10 minutes)",
+        "steps": [
+          "Observe how light changes by a window at different times",
+          "Notice light under a lamp with and without a shade",
+          "Check rooms with multiple light sources"
+        ]
+      },
+      {
+        "title": "Exercise 2: Three‑Point Lighting Setup (20 minutes)",
+        "steps": [
+          "Set up key light at 45° to subject",
+          "Add fill light to soften shadows",
+          "Add back light behind subject pointing at shoulders",
+          "Compare clips with each light added one by one"
+        ]
+      },
+      {
+        "title": "Exercise 3: Natural Light Portrait (10 minutes)",
+        "steps": [
+          "Position subject near a window as the only light source",
+          "Add a reflector on the shadow side and shoot again",
+          "Compare the difference in shadow quality"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What was the biggest lighting challenge I faced today? How did adding a fill light change the image?"
+  },
+  {
+    "title": "DAY 4: Audio for Video",
+    "objective": "By the end of Day 4, you will understand why audio matters more than video and be able to capture clean sound using basic techniques.",
+    "detailedContent": [
+      {
+        "title": "Your Audience Listens First",
+        "content": "Bad audio ruins good video. Viewers will tolerate mediocre visuals but will click away immediately from poor sound.\n\n**Solutions for Better Audio**\n\n1. **External microphone:** Lavalier (lapel) for interviews, Shotgun for directionality.\n2. **Audio recorder:** A smartphone placed close to the subject works too.\n3. **Indoor acoustics:** Soft furnishings (rugs, curtains) absorb sound and reduce echo.\n\n**Mic Technique**\n\n- **Distance:** Mic should be no more than 18 inches from subject.\n- **Levels:** Aim for peaks around -12dB to -6dB.\n- **Monitor:** Always use headphones to catch buzzing or wind noise."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=S0T-U_iP0_Q",
+      "title": "The Ultimate Guide to Audio for Video",
+      "description": "Covers mic types, placement, and recording levels."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Listen to Your Environment (10 minutes)",
+        "steps": [
+          "Sit quietly and identify ambient noises (HVAC, traffic)",
+          "Record 30 seconds of room ambient sound",
+          "Listen back on headphones to establish a baseline"
+        ]
+      },
+      {
+        "title": "Exercise 2: Distance Test (10 minutes)",
+        "steps": [
+          "Record speaking from 1 foot, 3 feet, and 6 feet away",
+          "Listen how room echo takes over as distance increases"
+        ]
+      },
+      {
+        "title": "Exercise 3: Improve a Room’s Sound (10 minutes)",
+        "steps": [
+          "Record in a bare room, then add blankets/pillows and record again",
+          "Notice the reduction in echo and improved clarity"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What surprised me most about today’s audio experiments? What’s the biggest audio challenge in my usual shooting environment?"
+  },
+  {
+    "title": "DAY 5: Camera Movement & Shooting Techniques",
+    "objective": "By the end of Day 5, you will be able to execute basic camera moves with intention and understand when to use each.",
+    "detailedContent": [
+      {
+        "title": "Motivated Movement",
+        "content": "Movement should have a reason—to reveal, follow action, or create energy. \n\n**Basic Camera Moves**\n\n1. **Pan:** Horizontal swivel following a subject.\n2. **Tilt:** Vertical swivel revealing height.\n3. **Dolly / Track:** Physical movement toward/away or sideways.\n4. **Handheld:** High energy, immersive (use bent knees for stability).\n\n**The 5‑Second Rule**\nHold each shot for at least 5 seconds for editing flexibility.\n\n**Shoot for the Edit**\nCapture Wide shots (location), Medium shots (action), Close‑ups (detail), and Cutaways."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=8mG_J8v_p9Q",
+      "title": "Camera Movement Techniques: When and How to Move",
+      "description": "Demonstrates each basic camera move with cinematic examples."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Tripod Practice (10 minutes)",
+        "steps": [
+          "Practice smooth pans with picked start and end points",
+          "Practice smooth vertical tilts",
+          "Review footage for jerks and repeat until smooth"
+        ]
+      },
+      {
+        "title": "Exercise 2: Handheld Walk (10 minutes)",
+        "steps": [
+          "Walk while holding camera, keeping horizon level",
+          "Practice the 'ninja walk' with bent knees as shock absorbers",
+          "Record a clip walking toward a subject and review stability"
+        ]
+      },
+      {
+        "title": "Exercise 3: Shoot a Simple Sequence (10 minutes)",
+        "steps": [
+          "Pick an activity (like making tea) and shoot a sequence:",
+          "Wide shot of environment, Medium of the action",
+          "Close-up of detail, Cutaway of a related object"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Which camera movement felt most natural? How can I add purposeful movement to my Day 7 video?"
+  },
+  {
+    "title": "DAY 6: Introduction to Editing",
+    "objective": "By the end of Day 6, you will be able to import footage, perform basic cuts, add music, and export a video using free editing software.",
+    "detailedContent": [
+      {
+        "title": "Editing Workflow",
+        "content": "Editing is the final rewrite. \n\n1. **Import & Organize:** Rename clips descriptively.\n2. **Rough Cut:** Arrange clips on timeline and trim.\n3. **Add Audio:** Balance levels and add royalty-free music.\n4. **Color & Effects:** Simple exposure/white balance correction.\n5. **Export:** 1080p, H.264 is the standard.\n\n**Editing Principles**\n\n- **Pacing:** Match cut speed to mood.\n- **J‑cut / L‑cut:** Audio starts/ends at different time than video for smoothness.\n- **Transitions:** Simple cuts are usually best."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=uKbe9p_fS0Y",
+      "title": "How to Edit Videos for Beginners (Step‑by‑Step)",
+      "description": "Covers basic workflow from import to export."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Install & Explore Software (15 minutes)",
+        "steps": [
+          "Choose/install software (DaVinci Resolve, CapCut, iMovie)",
+          "Import clips and explore the interface (timeline, tools)"
+        ]
+      },
+      {
+        "title": "Exercise 2: Make a Rough Cut (15 minutes)",
+        "steps": [
+          "Use the Day 5 sequence and arrange clips on timeline",
+          "Trim clips and ensure they tell a mini-story"
+        ]
+      },
+      {
+        "title": "Exercise 3: Add Music & Export (10 minutes)",
+        "steps": [
+          "Download/add royalty-free music and balance levels",
+          "Export at 1080p H.264 and watch your mini-video"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How did music change the feel of the video? What’s one editing skill I want to learn next?"
+  },
+  {
+    "title": "DAY 7: Putting It All Together",
+    "objective": "By the end of Day 7, you will have planned, shot, and edited a complete short video (30–60 seconds) demonstrating all the skills you’ve learned.",
+    "detailedContent": [
+      {
+        "title": "Planning & Production",
+        "content": "**Pre‑Production:** Choose a simple concept (mini-vlog, tutorial). Write a shot list with Wide, Medium, and Close-up shots.\n\n**Production:** Follow your shot list, holding each for 5+ seconds. Capture extra cutaways and 30 seconds of room tone.\n\n**Post‑Production:** Import, Rough Cut, Fine Cut, Audio mixing, Color correction, and Export."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=uKbe9p_fS0Y",
+      "title": "How to Plan, Shoot, and Edit a Video in One Day",
+      "description": "An inspirational look at an entire video project from start to finish."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Plan Your Video (15 minutes)",
+        "steps": [
+          "Choose concept and write a 8-12 shot list",
+          "Gather any needed props"
+        ]
+      },
+      {
+        "title": "Exercise 2: Shoot Your Video (30 minutes)",
+        "steps": [
+          "Set up shots according to list, capture detailed cutaways",
+          "Record silent room tone"
+        ]
+      },
+      {
+        "title": "Exercise 3: Edit & Evaluate (30 minutes)",
+        "steps": [
+          "Edit full sequence with music and audio cleanup",
+          "Evaluate strengths and growth areas compared to Day 1"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What was the most important thing I learned this week? What is my next step?"
+  }
+]

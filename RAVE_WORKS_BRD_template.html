@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAVE Works — Business Requirements Document</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap');
+
+  :root {
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --gray-100: #f5f5f5;
+    --gray-200: #e5e5e5;
+    --gray-400: #a3a3a3;
+    --gray-700: #404040;
+    --shadow: 4px 4px 0px 0px #0a0a0a;
+    --border: 2px solid #0a0a0a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--white);
+    color: var(--black);
+    font-size: 13px;
+    line-height: 1.65;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 56px;
+  }
+
+  /* COVER */
+  .cover {
+    min-height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    padding: 60px;
+    margin-bottom: 60px;
+    background: var(--black);
+    color: var(--white);
+    page-break-after: always;
+  }
+  .cover-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    margin-bottom: 24px;
+  }
+  .cover h1 {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    line-height: 0.95;
+    margin-bottom: 8px;
+  }
+  .cover h1 span { color: var(--gray-400); }
+  .cover-sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--gray-400);
+    margin-top: 28px;
+    border-top: 1px solid #333;
+    padding-top: 24px;
+  }
+  .cover-meta {
+    margin-top: auto;
+    padding-top: 48px;
+    display: flex;
+    gap: 40px;
+  }
+  .cover-meta-item label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--gray-400);
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 4px;
+  }
+  .cover-meta-item span { font-size: 14px; font-weight: 600; color: var(--white); }
+
+  /* TOC */
+  .toc {
+    padding: 40px;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    margin-bottom: 60px;
+    page-break-after: always;
+  }
+  .toc h2 { font-size: 22px; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 24px; }
+  .toc-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--gray-200);
+    font-size: 13px;
+  }
+  .toc-item:last-child { border-bottom: none; }
+  .toc-item span { color: var(--gray-400); font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+  .toc-indent { padding-left: 20px; color: var(--gray-700); }
+
+  /* Typography */
+  h2 {
+    font-size: 24px; font-weight: 900; letter-spacing: -0.5px;
+    margin: 48px 0 16px; padding-bottom: 10px; border-bottom: var(--border);
+  }
+  h3 { font-size: 16px; font-weight: 700; margin: 28px 0 10px; }
+  h4 {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--gray-700); margin: 22px 0 8px;
+  }
+
+  /* Screen section */
+  .screen-section { margin-bottom: 72px; }
+  .screen-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding: 16px 24px;
+    background: var(--black);
+    color: var(--white);
+    border: var(--border);
+    box-shadow: var(--shadow);
+  }
+  .screen-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px; font-weight: 700; color: #555;
+  }
+  .screen-title { font-size: 18px; font-weight: 800; letter-spacing: -0.3px; }
+  .screen-route {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: #888; margin-left: auto;
+  }
+
+  /* Screenshot */
+  .screenshot-wrap {
+    margin: 20px 0 28px;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .screenshot-label {
+    background: var(--gray-100);
+    border-bottom: var(--border);
+    padding: 8px 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--gray-700);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .screenshot-label::before {
+    content: '';
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--black);
+    display: inline-block;
+  }
+  .screenshot-wrap img { width: 100%; display: block; }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 12px; }
+  th {
+    background: var(--black); color: var(--white);
+    padding: 10px 14px; text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    border: var(--border);
+  }
+  td { padding: 9px 14px; border: 1px solid var(--gray-200); vertical-align: top; }
+  tr:nth-child(even) td { background: var(--gray-100); }
+
+  /* Code */
+  pre, code { font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+  pre {
+    background: var(--black); color: #e0e0e0;
+    padding: 20px 24px; border: var(--border);
+    box-shadow: var(--shadow);
+    margin: 14px 0; line-height: 1.7;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  code {
+    background: var(--gray-100); padding: 2px 6px;
+    border: 1px solid var(--gray-200); border-radius: 3px; font-size: 11px;
+  }
+  pre code { background: none; border: none; padding: 0; color: inherit; }
+
+  /* Info box */
+  .info-box {
+    border: var(--border); padding: 14px 18px;
+    margin: 16px 0; box-shadow: var(--shadow);
+    background: #fffbe6; font-size: 12px;
+  }
+
+  p { margin-bottom: 12px; }
+  ul, ol { margin: 8px 0 12px 24px; }
+  li { margin-bottom: 4px; }
+  hr { border: none; border-top: var(--border); margin: 48px 0; }
+
+  .page-break { page-break-before: always; }
+
+  footer {
+    text-align: center;
+    color: var(--gray-400);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: var(--border);
+  }
+
+  @media print {
+    body { padding: 20px 36px; }
+    .cover { min-height: 90vh; }
+    pre { white-space: pre-wrap; }
+  }
+  @page { size: A4; margin: 14mm 16mm; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-badge">Business Requirements Document &middot; v1.1 &middot; Confidential</div>
+  <h1>RAVE<br><span>WORKS</span></h1>
+  <div class="cover-sub">Social-First Creative Marketplace &mdash; Platform Specifications &amp; Screen-by-Screen Design</div>
+  <div class="cover-meta">
+    <div class="cover-meta-item">
+      <label>Date</label>
+      <span>February 27, 2026</span>
+    </div>
+    <div class="cover-meta-item">
+      <label>Platform</label>
+      <span>Next.js Web App</span>
+    </div>
+    <div class="cover-meta-item">
+      <label>Audience</label>
+      <span>Design &middot; Engineering &middot; Product</span>
+    </div>
+    <div class="cover-meta-item">
+      <label>Version</label>
+      <span>1.1</span>
+    </div>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <div class="toc-item">1. Executive Summary<span>&sect; 1</span></div>
+  <div class="toc-item">2. System Architecture Overview<span>&sect; 2</span></div>
+  <div class="toc-item">3. Screen-by-Screen Design &amp; Workflow<span>&sect; 3</span></div>
+  <div class="toc-item toc-indent">Screen 01 &mdash; Login Page<span>&sect; 3.1</span></div>
+  <div class="toc-item toc-indent">Screen 02 &mdash; Signup: Role Selection<span>&sect; 3.2</span></div>
+  <div class="toc-item toc-indent">Screen 03 &mdash; Signup: Details &amp; Verification<span>&sect; 3.3</span></div>
+  <div class="toc-item toc-indent">Screen 04 &mdash; Feed (Home)<span>&sect; 3.4</span></div>
+  <div class="toc-item toc-indent">Screen 05 &mdash; Explore<span>&sect; 3.5</span></div>
+  <div class="toc-item toc-indent">Screen 06 &mdash; Create Post / Campaign<span>&sect; 3.6</span></div>
+  <div class="toc-item toc-indent">Screen 07 &mdash; Dashboard<span>&sect; 3.7</span></div>
+  <div class="toc-item toc-indent">Screen 08 &mdash; Project Workspace<span>&sect; 3.8</span></div>
+  <div class="toc-item toc-indent">Screens 09&ndash;12 &mdash; Profile, Inbox, Application, Settings<span>&sect; 3.9&ndash;3.12</span></div>
+  <div class="toc-item toc-indent">Screen 13 &mdash; Admin Console<span>&sect; 3.13</span></div>
+  <div class="toc-item">4. Navigation Structure<span>&sect; 4</span></div>
+  <div class="toc-item">5. Data Model Summary<span>&sect; 5</span></div>
+  <div class="toc-item">6. API Endpoints Summary<span>&sect; 6</span></div>
+  <div class="toc-item">7. Key User Journeys<span>&sect; 7</span></div>
+  <div class="toc-item">8. Verification State Machine<span>&sect; 8</span></div>
+  <div class="toc-item">9. Design System<span>&sect; 9</span></div>
+</div>
+
+<!-- SECTION 1 -->
+<h2>1. Executive Summary</h2>
+<p><strong>RAVE Works</strong> is a social-first creative marketplace connecting <strong>Rave Heads</strong> (creators, freelancers, editors, musicians, models, sales agents) with <strong>OG Vendors</strong> (brands, agencies, labels). The platform blends a social feed with a professional work/campaign engine &mdash; think LinkedIn &times; Instagram for the creator economy.</p>
+
+<table>
+  <tr><th>Role</th><th>Description</th></tr>
+  <tr><td><strong>Rave Head</strong></td><td>Creative talent &mdash; posts work, applies to campaigns, delivers projects</td></tr>
+  <tr><td><strong>OG Vendor</strong></td><td>Brand or agency &mdash; posts campaigns, reviews applicants, hires creators</td></tr>
+  <tr><td><strong>Admin</strong></td><td>Platform operator &mdash; verifies identities, moderates content</td></tr>
+</table>
+
+<!-- SECTION 2 -->
+<h2>2. System Architecture Overview</h2>
+<pre>[ Auth Layer ] ──► [ Feed (Social) ] ──► [ Campaign / Work System ] ──► [ Project Workspace ]
+                                                ▲                               ▲
+                                          [ Explore ]                    [ Inbox / Chat ]
+                                          [ Profile ]                    [ Payments ]
+                                          [ Admin Console ]</pre>
+
+<table>
+  <tr><th>Stack Layer</th><th>Technology</th></tr>
+  <tr><td>Frontend</td><td>Next.js 15 (App Router)</td></tr>
+  <tr><td>Database</td><td>MongoDB + Mongoose ODM</td></tr>
+  <tr><td>Authentication</td><td>JWT stored in React AuthContext</td></tr>
+  <tr><td>Styling</td><td>Tailwind CSS</td></tr>
+  <tr><td>Design Language</td><td>Neobrutalism &mdash; thick borders, tactile buttons, bold uppercase typography, black/white palette</td></tr>
+</table>
+
+<!-- SECTION 3 -->
+<h2>3. Screen-by-Screen Design &amp; Workflow</h2>
+
+<!-- SCREEN 01 -->
+<div class="screen-section">
+  <div class="screen-header">
+    <span class="screen-num">01</span>
+    <span class="screen-title">Login Page</span>
+    <span class="screen-route">/login &middot; Public Access</span>
+  </div>
+
+  <div class="screenshot-wrap">
+    <div class="screenshot-label">Live Screenshot &mdash; Access Portal</div>
+    <img src="{{IMG_login}}" alt="Login Page Screenshot">
+  </div>
+
+  <h4>Layout</h4>
+  <p>Full-screen centered card (max-w-md). Lock icon logo lockup. H1: "Access Portal" (bold uppercase). Subtext: "Enter your credentials to enter the grid."</p>
+
+  <h4>UI Elements</h4>
+  <table>
+    <tr><th>Element</th><th>Details</th></tr>
+    <tr><td>Email Input</td><td><code>type="email"</code>, placeholder: <code>user@rave.com</code></td></tr>
+    <tr><td>Password Input</td><td><code>type="password"</code>, placeholder: <code>••••••••</code></td></tr>
+    <tr><td>Submit Button</td><td>Tactile neobrutalist button &mdash; label: "AUTHENTICATE"</td></tr>
+    <tr><td>Error Banner</td><td>Red-bordered box, renders API error messages inline</td></tr>
+    <tr><td>Signup Link</td><td>"New here? Join the RAVE" &rarr; <code>/signup</code></td></tr>
+    <tr><td>Dev Hint</td><td>Shows test account credentials at bottom (dev environment only)</td></tr>
+  </table>
+
+  <h4>Authentication Workflow</h4>
+  <pre>User enters email + password
+         │
+         ▼
+POST /api/auth/login
+         │
+    ┌────┴────┐
+  Success   Failure
+    │           │
+    ▼           ▼
+JWT stored   Error banner
+in context   displayed
+    │
+    ▼
+Redirect to / (Feed)</pre>
+
+  <h4>Business Rules</h4>
+  <ul>
+    <li>On success: JWT stored in <code>AuthContext</code>, user redirected to <code>/</code> (feed)</li>
+    <li>On failure: Error displayed inline, no page redirect</li>
+    <li>If already authenticated: Middleware redirects away from login page</li>
+  </ul>
+</div>
+
+<!-- SCREEN 02 -->
+<div class="screen-section page-break">
+  <div class="screen-header">
+    <span class="screen-num">02</span>
+    <span class="screen-title">Signup &mdash; Role Selection</span>
+    <span class="screen-route">/signup (Step 1) &middot; Public Access</span>
+  </div>
+
+  <div class="screenshot-wrap">
+    <div class="screenshot-label">Live Screenshot &mdash; Choose Your Path (Role Selection)</div>
+    <img src="{{IMG_signup1}}" alt="Signup Step 1 Screenshot">
+  </div>
+
+  <h4>UI Elements</h4>
+  <table>
+    <tr><th>Element</th><th>Details</th></tr>
+    <tr><td>Rave Head Card</td><td>Sparkles icon &mdash; "Creatives, Freelancers, Editors, Musicians, Models"</td></tr>
+    <tr><td>OG Vendor Card</td><td>Briefcase icon &mdash; "Brands, Agencies, Labels"</td></tr>
+    <tr><td>Continue Button</td><td>Active role card highlighted with dark border; "CONTINUE" proceeds to step 2</td></tr>
+    <tr><td>Login Link</td><td>"Already have an account? Login" &rarr; <code>/login</code></td></tr>
+  </table>
+
+  <h4>Step 1 Workflow</h4>
+  <pre>User lands on /signup
+       │
+       ▼
+Select role: RAVE HEAD or OG VENDOR (default: Rave Head)
+       │
+       ▼
+Click CONTINUE → Step 2 form renders</pre>
+</div>
+
+<!-- SCREEN 03 -->
+<div class="screen-section page-break">
+  <div class="screen-header">
+    <span class="screen-num">03</span>
+    <span class="screen-title">Signup &mdash; Details &amp; Verification</span>
+    <span class="screen-route">/signup (Step 2) &middot; Public Access</span>
+  </div>
+
+  <div class="screenshot-wrap">
+    <div class="screenshot-label">Live Screenshot &mdash; Rave Head Registration Form</div>
+    <img src="{{IMG_signup2}}" alt="Signup Step 2 Screenshot">
+  </div>
+
+  <h4>UI Elements &mdash; Rave Head Path</h4>
+  <table>
+    <tr><th>Element</th><th>Details</th></tr>
+    <tr><td>Full Name</td><td>Text input &mdash; Required</td></tr>
+    <tr><td>Email</td><td>Email input &mdash; Required</td></tr>
+    <tr><td>Password</td><td>Password input &mdash; Required</td></tr>
+    <tr><td>ID Verification</td><td>File upload (Government ID, image or PDF) &mdash; <strong>Mandatory</strong></td></tr>
+    <tr><td>Interests</td><td>Toggle chip grid: Creator, Freelancer, Editor, Sales Agent, Musician, Model</td></tr>
+    <tr><td>Skills</td><td>Tag input &mdash; press Enter to add, &times; to remove</td></tr>
+    <tr><td>Submit</td><td>"COMPLETE REGISTRATION" tactile button</td></tr>
+  </table>
+
+  <h4>UI Elements &mdash; OG Vendor Path</h4>
+  <table>
+    <tr><th>Element</th><th>Details</th></tr>
+    <tr><td>Full Name, Email, Password</td><td>Standard required inputs</td></tr>
+    <tr><td>ID Verification</td><td>File upload &mdash; <strong>Mandatory</strong></td></tr>
+    <tr><td>Vendor Type</td><td>Radio selector: Individual vs. Company</td></tr>
+    <tr><td>Brand Name</td><td>Text input</td></tr>
+    <tr><td>Description</td><td>Textarea &mdash; "What does your brand do?"</td></tr>
+    <tr><td>Company Doc</td><td>File upload (company registration doc) &mdash; shown when Company type selected</td></tr>
+  </table>
+
+  <h4>Signup Workflow</h4>
+  <pre>Fill form + Upload ID document
+         │
+         ▼
+POST /api/auth/signup
+         │
+    ┌────┴────┐
+  Success   Failure
+    │           │
+    ▼           ▼
+JWT issued   Alert shown,
+Redirect to  user stays
+/dashboard   on page
+         │
+         ▼
+verificationStatus = "pending"
+Content creation is LOCKED until admin approval</pre>
+
+  <h4>Business Rules</h4>
+  <ul>
+    <li>ID Document upload is <strong>mandatory</strong> for all roles</li>
+    <li>Company vendors must additionally upload a company registration document</li>
+    <li>Account is created with <code>verificationStatus: "pending"</code></li>
+    <li>JWT is issued immediately so user can view dashboard and track verification status</li>
+  </ul>
+</div>
+
+<!-- SCREEN 04 -->
+<div class="screen-section page-break">
+  <div class="screen-header">
+    <span class="screen-num">04</span>
+    <span class="screen-title">Feed &mdash; Home</span>
+    <span class="screen-route">/ (feed route group) &middot; Authenticated</span>
+  </div>
+
+  <div class="screenshot-wrap">
+    <div class="screenshot-label">Live Screenshot &mdash; Social Feed Stream</div>
+    <img src="{{IMG_feed}}" alt="Feed Home Screenshot">
+  </div>
+
+  <h4>Post Types in Feed</h4>
+  <table>
+    <tr><th>Type</th><th>Description</th><th>Author</th></tr>
+    <tr><td><code>DROP</code></td><td>General creative content post (text + optional media)</td><td>Rave Head</td></tr>
+    <tr><td><code>WORK</code></td><td>Portfolio work showcase with tags and category label</td><td>Rave Head</td></tr>
+    <tr><td><code>CAMPAIGN</code></td><td>Job/gig posting with requirements, budget, and Apply CTA</td><td>OG Vendor</td></tr>
+  </table>
+
+  <h4>FeedPost Card Anatomy</h4>
+  <ul>
+    <li>Author avatar, display name, role badge, relative timestamp</li>
+    <li>Content: title (optional), text body, media image or video</li>
+    <li>Campaign card: requirements list, budget label, "APPLY" button</li>
+    <li>Work card: tag chips, creative category</li>
+    <li>Metrics: Likes ("Praise") count, Comments count</li>
+    <li>Actions: Like, Comment, Share</li>
+  </ul>
+
+  <h4>Feed Workflow</h4>
+  <pre>User opens app → GET /api/feed
+       │
+       ▼
+Render FeedPost cards (chronological)
+       │
+  ┌────┴───────────────────────┐
+  │                            │
+CAMPAIGN card             DROP / WORK card
+  │                            │
+  ▼                            ▼
+"APPLY" CTA              Like / Comment actions
+  │
+  ▼
+POST /api/application</pre>
+</div>
+
+<!-- SCREEN 05 -->
+<div class="screen-section page-break">
+  <div class="screen-header">
+    <span class="screen-num">05</span>
+    <span class="screen-title">Explore</span>
+    <span class="screen-route">/explore &middot; Authenticated</span>
+  </div>
+
+  <div class="screenshot-wrap">
+    <div class="screenshot-label">Live Screenshot &mdash; Discovery Grid with Editor's Pick Feature</div>
+    <img src="{{IMG_explore}}" alt="Explore Page Screenshot">
+  </div>
+
+  <h4>UI Elements</h4>
+  <table>
+    <tr><th>Element</th><th>Details</th></tr>
+    <tr><td>Search Bar</td><td>Rounded-pill input &mdash; "Search Campaigns, Talent, or Vibes..."</td></tr>
+    <tr><td>Filter Button</td><td>Opens advanced filter panel</td></tr>
+    <tr><td>Category Pills</td><td>Scrollable: Trending, Campaigns, 3D Art, Video Config, Music, Techno</td></tr>
+    <tr><td>Editor's Pick</td><td>Large 2&times;2 featured card with "EDITOR'S PICK" badge overlay</td></tr>
+    <tr><td>Grid Cards</td><td>Aspect-square image cards with hover "View" overlay</td></tr>
+  </table>
+
+  <h4>Business Rules</h4>
+  <ul>
+    <li>Search queries across talent profiles (Rave Heads) and campaigns (OG Vendors)</li>
+    <li>Filter categories map to post types and creative categories</li>
+    <li>"Editor's Pick" is manually curated by Admin via the Admin Console</li>
+  </ul>
+</div>
+
+<!-- SCREEN 06 -->
+<div class="screen-section page-break">
+  <div class="screen-header">
+    <span class="screen-num">06</span>
+    <span class="screen-title">Create Post / Campaign</span>
+    <span class="screen-route">/create/post &amp; /create/campaign &middot; Authenticated + Verified</span>
+  </div>
+
+  <div class="info-box"><strong>Access Gate:</strong> Only users with <code>verificationStatus === "verified"</code> can access this screen. Unverified users see a locked state prompting them to await admin approval.</div>
+
+  <h4>UI Elements &mdash; Create Post (Rave Head)</h4>
+  <table>
+    <tr><th>Element</th><th>Details</th></tr>
+    <tr><td>Type Selector</td><td>Toggle: DROP / WORK</td></tr>
+    <tr><td>Title</td><td>Optional text input</td></tr>
+    <tr><td>Body</td><td>Textarea &mdash; main content (required)</td></tr>
+    <tr><td>Media Upload</td><td>Image or video file</td></tr>
+    <tr><td>Tags</td><td>Tag input &mdash; Enter to add (WORK type only)</td></tr>
+    <tr><td>Category</td><td>Dropdown (WORK type only)</td></tr>
+    <tr><td>Submit</td><td>"POST TO THE GRID"</td></tr>
+  </table>
+
+  <h4>UI Elements &mdash; Create Campaign (OG Vendor Only)</h4>
+  <table>
+    <tr><th>Element</th><th>Details</th></tr>
+    <tr><td>Campaign Title</td><td>Text input &mdash; Required</td></tr>
+    <tr><td>Campaign Type</td><td>Enum: CREATOR / SALES / FREELANCE</td></tr>
+    <tr><td>Description</td><td>Textarea &mdash; Required</td></tr>
+    <tr><td>Requirements</td><td>Dynamic list &mdash; add/remove items individually</td></tr>
+    <tr><td>Pay Amount</td><td>Text input (e.g., "&#8377;5000 per reel")</td></tr>
+    <tr><td>Asset Upload</td><td>Brand assets zip or individual files for creators to download</td></tr>
+    <tr><td>Submit</td><td>"LAUNCH CAMPAIGN"</td></tr>
+  </table>
+</div>
+
+<!-- SCREEN 07 -->
+<div class="screen-section page-break">
+  <div class="screen-header">
+    <span class="screen-num">07</span>
+    <span class="screen-title">Dashboard</span>
+    <span class="screen-route">/dashboard &middot; Authenticated</span>
+  </div>
+
+  <div class="info-box"><strong>Role-Adaptive:</strong> Dashboard renders a different layout for Rave Heads ("Gig Center") vs. OG Vendors ("Campaign Manager").</div>
+
+  <h4>7A &mdash; Rave Head Dashboard ("Gig Center")</h4>
+  <table>
+    <tr><th>Section</th><th>Details</th></tr>
+    <tr><td>Active Applications</td><td>List of campaigns applied to, each with status badge (PENDING / ACCEPTED / REJECTED)</td></tr>
+    <tr><td>Inbox Preview</td><td>Latest 3 messages from vendors &mdash; sender avatar, name, snippet, date</td></tr>
+    <tr><td>Empty State CTA</td><td>"FIND GIGS" &rarr; links to feed</td></tr>
+  </table>
+
+  <h4>7B &mdash; OG Vendor Dashboard ("Campaign Manager")</h4>
+  <table>
+    <tr><th>Section</th><th>Details</th></tr>
+    <tr><td>Campaign Cards</td><td>Each card: title, status (active/closed), total applicant count</td></tr>
+    <tr><td>Recent Applicants</td><td>Avatar, name, "VIEW STAT" and "HIRE" action buttons</td></tr>
+    <tr><td>View All Button</td><td>Dashed-border button per campaign &rarr; application detail list</td></tr>
+  </table>
+
+  <h4>Hire Flow</h4>
+  <pre>Vendor clicks HIRE on applicant card
+       │
+       ▼
+Confirm: "Hire this creator?"
+       │
+       ▼
+POST /api/project/init { applicationId }
+       │
+       ▼
+Project record created (status: ACTIVE)
+       │
+       ▼
+Redirect to /project/[id]</pre>
+</div>
+
+<!-- SCREEN 08 -->
+<div class="screen-section page-break">
+  <div class="screen-header">
+    <span class="screen-num">08</span>
+    <span class="screen-title">Project Workspace</span>
+    <span class="screen-route">/project/[id] &middot; Vendor + Assigned Creator Only</span>
+  </div>
+
+  <h4>Project State Machine</h4>
+  <pre>ACTIVE &rarr; SUBMITTED &rarr; REVISION &rarr; COMPLETED</pre>
+
+  <h4>Payment State Machine</h4>
+  <pre>PENDING &rarr; HELD &rarr; RELEASED</pre>
+
+  <h4>UI Sections</h4>
+  <table>
+    <tr><th>Section</th><th>Details</th></tr>
+    <tr><td>Briefs &amp; Assets</td><td>Campaign description + downloadable brand assets uploaded by vendor</td></tr>
+    <tr><td>Submission Box</td><td>Creator uploads work URL + optional note</td></tr>
+    <tr><td>Revision Notes</td><td>Vendor feedback text if requesting changes</td></tr>
+    <tr><td>Payment Panel</td><td>Agreed amount display; vendor controls release / hold</td></tr>
+    <tr><td>Chat Panel</td><td>Inline messaging thread between vendor and creator</td></tr>
+  </table>
+
+  <h4>Creator Submission Workflow</h4>
+  <pre>Access workspace &rarr; Download brief + assets
+       │
+       ▼
+Complete work outside platform
+       │
+       ▼
+POST /api/project/submit { url, note }
+Status &rarr; SUBMITTED
+       │
+  ┌────┴────┐
+Approved   Revision Requested
+  │              │
+  ▼              ▼
+COMPLETED    Notes sent
+Payment      Creator revises
+RELEASED     and resubmits</pre>
+</div>
+
+<!-- SCREENS 09-12 COMPACT -->
+<div class="page-break">
+<h2>Screens 09&ndash;12 &mdash; Supplementary Screens</h2>
+<table>
+  <tr><th>Screen</th><th>Route</th><th>Key Details</th></tr>
+  <tr>
+    <td><strong>09 &mdash; Profile</strong></td>
+    <td><code>/profile/[username]</code></td>
+    <td>Cover image + avatar, identity block (name, role badge, verification checkmark), bio, stats row (posts, rating, skills), skill chips, portfolio WORK grid, recent DROP list. Own profile shows Edit button; others show Message + Apply CTAs.</td>
+  </tr>
+  <tr>
+    <td><strong>10 &mdash; Inbox</strong></td>
+    <td><code>/inbox</code></td>
+    <td>Two-panel layout: conversation list (left) + bubble-style active chat (right). Unread count badges. Text input + send button. Project-specific chat lives within <code>/project/[id]</code>.</td>
+  </tr>
+  <tr>
+    <td><strong>11 &mdash; Application Detail</strong></td>
+    <td><code>/application/[id]</code></td>
+    <td>Campaign preview card, creator's proposal text, status badge (PENDING / ACCEPTED / REJECTED). Vendor-only: Accept (Hire) and Reject action buttons. Applications submitted via POST <code>/api/application</code>.</td>
+  </tr>
+  <tr>
+    <td><strong>12 &mdash; Settings</strong></td>
+    <td><code>/settings</code></td>
+    <td>Profile photo upload, display name edit, bio, skills/interests toggles, password change section, notification toggles, verification status display (read-only badge).</td>
+  </tr>
+</table>
+</div>
+
+<!-- SCREEN 13 -->
+<div class="screen-section page-break">
+  <div class="screen-header">
+    <span class="screen-num">13</span>
+    <span class="screen-title">Admin Console</span>
+    <span class="screen-route">/admin &middot; Admin Role Only</span>
+  </div>
+
+  <div class="info-box"><strong>Access:</strong> Restricted exclusively to users with <code>role === "admin"</code>. Unauthorized access redirects to feed.</div>
+
+  <h4>Tab 1 &mdash; Overview</h4>
+  <div class="screenshot-wrap">
+    <div class="screenshot-label">Live Screenshot &mdash; Admin Overview Stats Dashboard</div>
+    <img src="{{IMG_admin_ov}}" alt="Admin Overview Screenshot">
+  </div>
+  <table>
+    <tr><th>Metric Card</th><th>Color Indicator</th></tr>
+    <tr><td>Total Users</td><td>Default (black/white)</td></tr>
+    <tr><td>Total Drops</td><td>Default (black/white)</td></tr>
+    <tr><td>Active Campaigns</td><td>Green</td></tr>
+    <tr><td>Pending Verifications</td><td>Yellow / Amber</td></tr>
+  </table>
+
+  <h4>Tab 2 &mdash; User Management</h4>
+  <div class="screenshot-wrap">
+    <div class="screenshot-label">Live Screenshot &mdash; User Management Table with Ban Actions</div>
+    <img src="{{IMG_admin_us}}" alt="Admin Users Screenshot">
+  </div>
+  <table>
+    <tr><th>Column</th><th>Details</th></tr>
+    <tr><td>User</td><td>Name or Brand Name + Email address</td></tr>
+    <tr><td>Role</td><td>rave_head / og_vendor / admin</td></tr>
+    <tr><td>Status</td><td>Verification badge (verified / pending / rejected)</td></tr>
+    <tr><td>Actions</td><td>Ban button (red StopCircle icon) &rarr; PATCH <code>/api/admin/users</code></td></tr>
+  </table>
+
+  <h4>Tab 3 &mdash; Content Moderation</h4>
+  <p>Full table of all platform posts with: type (DROP / WORK / CAMPAIGN), author name, content snippet, engagement stats (likes, comments), and a permanent <strong>Delete</strong> button. Deletions are irreversible and remove content from feed and database.</p>
+
+  <h4>Tab 4 &mdash; Verifications Queue</h4>
+  <p>Card grid of pending users (2-column on desktop). Each card shows: role badge, name, email, submission date, ID document link (clickable preview), and Approve/Reject action buttons.</p>
+  <pre>Admin clicks ID document link &rarr; reviews identity
+       │
+       ▼
+Click APPROVE or REJECT
+       │
+       ▼
+POST /api/admin/verification { userId, status }
+       │
+verified &rarr; Full platform access (create, apply)
+rejected &rarr; View-only access; cannot create content</pre>
+</div>
+
+<!-- SECTION 4 -->
+<h2 class="page-break">4. Navigation Structure</h2>
+<p>The NavDock component renders as a fixed left floating pill sidebar on desktop, and a fixed bottom dock on mobile. Both share the same 5 navigation items:</p>
+<table>
+  <tr><th>Icon</th><th>Label</th><th>Route</th><th>Desktop</th><th>Mobile</th></tr>
+  <tr><td>&#127968; Home</td><td>Feed</td><td><code>/</code></td><td>Left floating dock</td><td>Bottom dock</td></tr>
+  <tr><td>&#128269; Search</td><td>Explore</td><td><code>/explore</code></td><td>Left floating dock</td><td>Bottom dock</td></tr>
+  <tr><td>&#10133; Plus (CTA)</td><td>Create</td><td><code>/create</code></td><td>Left floating dock</td><td>Bottom dock center</td></tr>
+  <tr><td>&#128172; Message</td><td>Inbox</td><td><code>/inbox</code></td><td>Left floating dock</td><td>Bottom dock</td></tr>
+  <tr><td>&#128100; User</td><td>Profile</td><td><code>/profile</code></td><td>Left floating dock</td><td>Bottom dock</td></tr>
+</table>
+
+<!-- SECTION 5 -->
+<h2>5. Data Model Summary</h2>
+
+<h3>User Model</h3>
+<table>
+  <tr><th>Field</th><th>Type</th><th>Notes</th></tr>
+  <tr><td>name</td><td>String</td><td>Required</td></tr>
+  <tr><td>email</td><td>String</td><td>Unique identifier</td></tr>
+  <tr><td>role</td><td>Enum</td><td>rave_head / og_vendor / admin / support</td></tr>
+  <tr><td>interests</td><td>String[]</td><td>Rave Head only (Creator, Editor, Musician, ...)</td></tr>
+  <tr><td>skills</td><td>String[]</td><td>Rave Head only (user-defined skill tags)</td></tr>
+  <tr><td>brandName</td><td>String</td><td>OG Vendor only</td></tr>
+  <tr><td>vendorType</td><td>Enum</td><td>individual / company</td></tr>
+  <tr><td>verificationStatus</td><td>Enum</td><td>unverified / pending / verified / rejected</td></tr>
+  <tr><td>idDocument</td><td>String</td><td>URL to uploaded government ID</td></tr>
+  <tr><td>rating</td><td>Number</td><td>Computed from completed project reviews</td></tr>
+</table>
+
+<h3>Post Model</h3>
+<table>
+  <tr><th>Field</th><th>Type</th><th>Notes</th></tr>
+  <tr><td>type</td><td>Enum</td><td>DROP / WORK / CAMPAIGN</td></tr>
+  <tr><td>author</td><td>ObjectId &rarr; User</td><td></td></tr>
+  <tr><td>content.title</td><td>String</td><td>Optional</td></tr>
+  <tr><td>content.text</td><td>String</td><td>Required</td></tr>
+  <tr><td>content.mediaUrl</td><td>String</td><td>Image or Video URL</td></tr>
+  <tr><td>workDetails.tags</td><td>String[]</td><td>WORK type only</td></tr>
+  <tr><td>workDetails.category</td><td>String</td><td>WORK type only</td></tr>
+  <tr><td>campaignDetails.requirements</td><td>String[]</td><td>CAMPAIGN type only</td></tr>
+  <tr><td>campaignDetails.budget</td><td>String</td><td>CAMPAIGN type only</td></tr>
+  <tr><td>metrics.likes</td><td>Number</td><td>Default 0</td></tr>
+  <tr><td>metrics.comments</td><td>Number</td><td>Default 0</td></tr>
+</table>
+
+<h3>Campaign Model</h3>
+<table>
+  <tr><th>Field</th><th>Type</th><th>Notes</th></tr>
+  <tr><td>title</td><td>String</td><td>Required</td></tr>
+  <tr><td>vendorId</td><td>ObjectId &rarr; User</td><td>OG Vendor only</td></tr>
+  <tr><td>type</td><td>Enum</td><td>CREATOR / SALES / FREELANCE</td></tr>
+  <tr><td>requirements</td><td>String[]</td><td>List of deliverable requirements</td></tr>
+  <tr><td>payAmount</td><td>String</td><td>Free-form (e.g., "&#8377;5000 per reel")</td></tr>
+  <tr><td>status</td><td>Enum</td><td>active / closed</td></tr>
+  <tr><td>assets</td><td>String[]</td><td>Brand asset URLs for download</td></tr>
+</table>
+
+<h3>Application Model</h3>
+<table>
+  <tr><th>Field</th><th>Type</th><th>Notes</th></tr>
+  <tr><td>campaign</td><td>ObjectId &rarr; Campaign</td><td></td></tr>
+  <tr><td>applicant</td><td>ObjectId &rarr; User</td><td>Rave Head</td></tr>
+  <tr><td>status</td><td>Enum</td><td>PENDING / ACCEPTED / REJECTED</td></tr>
+  <tr><td>message</td><td>String</td><td>Creator's proposal text</td></tr>
+</table>
+
+<h3>Project Model</h3>
+<table>
+  <tr><th>Field</th><th>Type</th><th>Notes</th></tr>
+  <tr><td>campaign</td><td>ObjectId &rarr; Campaign</td><td></td></tr>
+  <tr><td>vendor</td><td>ObjectId &rarr; User</td><td>OG Vendor</td></tr>
+  <tr><td>creator</td><td>ObjectId &rarr; User</td><td>Rave Head (hired)</td></tr>
+  <tr><td>status</td><td>Enum</td><td>ACTIVE / SUBMITTED / REVISION / COMPLETED</td></tr>
+  <tr><td>paymentStatus</td><td>Enum</td><td>PENDING / HELD / RELEASED</td></tr>
+  <tr><td>agreedAmount</td><td>Number</td><td>Negotiated payment amount</td></tr>
+  <tr><td>submissionUrl</td><td>String</td><td>Deliverable link from creator</td></tr>
+  <tr><td>submissionNote</td><td>String</td><td>Optional note from creator</td></tr>
+</table>
+
+<!-- SECTION 6 -->
+<h2 class="page-break">6. API Endpoints Summary</h2>
+<table>
+  <tr><th>Method</th><th>Endpoint</th><th>Description</th></tr>
+  <tr><td>POST</td><td><code>/api/auth/signup</code></td><td>Register new user (all roles)</td></tr>
+  <tr><td>POST</td><td><code>/api/auth/login</code></td><td>Login, returns signed JWT</td></tr>
+  <tr><td>GET</td><td><code>/api/feed</code></td><td>Fetch paginated feed posts</td></tr>
+  <tr><td>GET</td><td><code>/api/dashboard</code></td><td>Fetch role-based dashboard data</td></tr>
+  <tr><td>POST</td><td><code>/api/application</code></td><td>Submit application to a campaign</td></tr>
+  <tr><td>POST</td><td><code>/api/project/init</code></td><td>Hire creator &rarr; create project record</td></tr>
+  <tr><td>POST</td><td><code>/api/project/submit</code></td><td>Creator submits deliverable</td></tr>
+  <tr><td>GET</td><td><code>/api/messages</code></td><td>Fetch conversation messages for current user</td></tr>
+  <tr><td>POST</td><td><code>/api/messages</code></td><td>Send a message to another user</td></tr>
+  <tr><td>GET</td><td><code>/api/admin/stats</code></td><td>Fetch platform overview metrics</td></tr>
+  <tr><td>GET</td><td><code>/api/admin/users</code></td><td>List all registered users</td></tr>
+  <tr><td>PATCH</td><td><code>/api/admin/users</code></td><td>Execute ban on a user</td></tr>
+  <tr><td>GET</td><td><code>/api/admin/content</code></td><td>List all posts for moderation</td></tr>
+  <tr><td>DELETE</td><td><code>/api/admin/content</code></td><td>Delete a post (permanent, no undo)</td></tr>
+  <tr><td>GET</td><td><code>/api/admin/verification</code></td><td>List pending verification users</td></tr>
+  <tr><td>POST</td><td><code>/api/admin/verification</code></td><td>Approve or reject a user's identity</td></tr>
+</table>
+
+<!-- SECTION 7 -->
+<h2>7. Key User Journeys</h2>
+
+<h3>Journey 1 &mdash; New Rave Head (Creator)</h3>
+<pre>Sign Up &rarr; Choose "Rave Head" &rarr; Fill profile + Upload Government ID
+       &darr;
+Dashboard (pending verification banner shown)
+       &darr;
+Admin reviews ID &rarr; Approves &rarr; verificationStatus = "verified"
+       &darr;
+Creator can now: Post content, Apply to campaigns
+       &darr;
+Browse feed &rarr; Find CAMPAIGN post &rarr; Click APPLY &rarr; Write proposal
+       &darr;
+Vendor reviews application &rarr; Clicks HIRE
+       &darr;
+Project workspace created &rarr; Creator downloads brief + brand assets
+       &darr;
+Creator submits deliverable URL &rarr; Vendor approves &rarr; Payment RELEASED</pre>
+
+<h3>Journey 2 &mdash; New OG Vendor (Brand)</h3>
+<pre>Sign Up &rarr; Choose "OG Vendor" &rarr; Fill brand details + Upload ID
+       &darr;
+Dashboard (pending verification)
+       &darr;
+Admin approves &rarr; Campaign posting enabled
+       &darr;
+Create Campaign &rarr; Published to global feed
+       &darr;
+Rave Heads apply &rarr; Review applicant profiles in Dashboard
+       &darr;
+HIRE creator &rarr; Project workspace created
+       &darr;
+Review submission &rarr; Approve or request Revision &rarr; COMPLETED</pre>
+
+<h3>Journey 3 &mdash; Admin Moderation Cycle</h3>
+<pre>Login as admin &rarr; /admin
+       &darr;
+Overview tab: Review platform health metrics
+       &darr;
+Verifications tab: Review pending ID documents &rarr; Approve or Reject
+       &darr;
+Users tab: Monitor user activity &rarr; Ban bad actors
+       &darr;
+Content tab: Review reported or flagged posts &rarr; Delete violations</pre>
+
+<!-- SECTION 8 -->
+<h2>8. Verification State Machine</h2>
+<pre>UNVERIFIED (default at account creation)
+       │
+       ▼  User uploads ID document during signup
+PENDING (awaiting admin review)
+       │
+  ┌────┴─────────┐
+ Admin Approves  Admin Rejects
+  │                   │
+  ▼                   ▼
+VERIFIED            REJECTED
+(full access:       (limited: view feed,
+ create, apply)      cannot post or apply)</pre>
+
+<!-- SECTION 9 -->
+<h2>9. Design System</h2>
+<table>
+  <tr><th>Token</th><th>Value</th></tr>
+  <tr><td>Primary Font</td><td>Inter &mdash; body and headings</td></tr>
+  <tr><td>Monospace Font</td><td>JetBrains Mono &mdash; labels, data, code</td></tr>
+  <tr><td>Heading Style</td><td>Bold uppercase (font-weight: 900, letter-spacing: tight)</td></tr>
+  <tr><td>Button Style</td><td>"Tactile" &mdash; 8px solid black drop shadow offset (neobrutalist)</td></tr>
+  <tr><td>Color Palette</td><td>Black (#0A0A0A) / White (#FFFFFF) / Off-white / Muted grays</td></tr>
+  <tr><td>Border</td><td>2px solid black on all interactive elements and cards</td></tr>
+  <tr><td>Border Radius</td><td>xl (12px) for cards; full (9999px) for avatars and pill shapes</td></tr>
+  <tr><td>Card Shadow</td><td><code>8px 8px 0px 0px rgba(0,0,0,1)</code></td></tr>
+  <tr><td>Design Language</td><td>Neobrutalism &mdash; bold, tactile, graphic, no gradient backgrounds</td></tr>
+</table>
+
+<h2>10. Out of Scope &mdash; Future Phases</h2>
+<ul>
+  <li>Push notifications (web push + mobile)</li>
+  <li>Payment gateway integration (Stripe or Razorpay)</li>
+  <li>Video call / screen share within project workspace</li>
+  <li>Public API for external brand integrations</li>
+  <li>Subscription tiers and platform fee / revenue model</li>
+  <li>Native mobile app (iOS and Android)</li>
+  <li>Multi-language and internationalization support</li>
+</ul>
+
+<footer>
+  RAVE Works &mdash; Business Requirements Document &middot; v1.1 &middot; February 2026 &middot; Confidential
+</footer>
+
+</body>
+</html>

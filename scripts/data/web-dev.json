@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Day 1: How the Web Works",
+    "content": "Understanding Browsers, Servers, and HTTP.",
+    "videoUrl": "https://www.youtube.com/watch?v=S0T-U_iP0_Q",
+    "exercise": "Explain in your own words what happens when you type a URL into a browser."
+  },
+  {
+    "title": "Day 2: HTML Fundamentals: Structure",
+    "content": "Head, Body, and essential tags.",
+    "videoUrl": "https://www.youtube.com/watch?v=k-I5N8_h9S0",
+    "exercise": "Create a simple HTML page with a heading, a paragraph, and an image."
+  },
+  {
+    "title": "Day 3: HTML: Links and Tables",
+    "content": "Connecting pages and organizing data.",
+    "videoUrl": "https://www.youtube.com/watch?v=2fWhV0g6n7E",
+    "exercise": "Create a table listing your top 5 favorite movies and their release years."
+  },
+  {
+    "title": "Day 4: HTML: Forms and Inputs",
+    "content": "Gathering user data.",
+    "videoUrl": "https://www.youtube.com/watch?v=N6R_J_vWreY",
+    "exercise": "Design a contact form with fields for Name, Email, and Message."
+  },
+  {
+    "title": "Day 5: CSS Basics: Selectors and Colors",
+    "content": "Styling your HTML.",
+    "videoUrl": "https://www.youtube.com/watch?v=0k60_G-Gv5c",
+    "exercise": "Change the background color and text color of your HTML page from Day 2."
+  },
+  {
+    "title": "Day 6: CSS: The Box Model",
+    "content": "Padding, Border, Margin, and Content.",
+    "videoUrl": "https://www.youtube.com/watch?v=8mG_J8v_p9Q",
+    "exercise": "Create a box on your page and experiment with different padding and margin values."
+  },
+  {
+    "title": "Day 7: CSS: Typography and Fonts",
+    "content": "Making your text look professional.",
+    "videoUrl": "https://www.youtube.com/watch?v=48_wV2Q52fM",
+    "exercise": "Apply a Google Font to your HTML page and adjust the font-size and line-height."
+  },
+  {
+    "title": "Day 8: CSS: Layout with Flexbox",
+    "content": "Modern alignment made easy.",
+    "videoUrl": "https://www.youtube.com/watch?v=M9G9yEjzBWA",
+    "exercise": "Create a horizontal navigation bar using Flexbox."
+  },
+  {
+    "title": "Day 9: CSS: Layout with Grid",
+    "content": "Building complex 2D layouts.",
+    "videoUrl": "https://www.youtube.com/watch?v=7XG3_p816_c",
+    "exercise": "Build a simple 3-column photo gallery using CSS Grid."
+  },
+  {
+    "title": "Day 10: Responsive Design & Media Queries",
+    "content": "Making websites work on mobile.",
+    "videoUrl": "https://www.youtube.com/watch?v=vV689849E2o",
+    "exercise": "Adjust your layout so that the navigation bar turns into a vertical list on small screens."
+  },
+  {
+    "title": "Day 11: Intro to JavaScript: Variables & Logic",
+    "content": "Adding interactivity to the web.",
+    "videoUrl": "https://www.youtube.com/watch?v=x9m6-G-jM78",
+    "exercise": "Write a script that displays an alert saying 'Hello, World!' when a button is clicked."
+  },
+  {
+    "title": "Day 12: JS: Functions and Scoping",
+    "content": "Organizing your code into reusable blocks.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M7F-A-jF9k",
+    "exercise": "Create a function that takes two numbers and returns their sum."
+  },
+  {
+    "title": "Day 13: JS: DOM Manipulation",
+    "content": "Changing HTML/CSS with JavaScript.",
+    "videoUrl": "https://www.youtube.com/watch?v=iE1YvN_k9fM",
+    "exercise": "Create a button that changes the color of a heading when clicked."
+  },
+  {
+    "title": "Day 14: JS: Events and Listeners",
+    "content": "Responding to user actions.",
+    "videoUrl": "https://www.youtube.com/watch?v=YwLnkKkS-kI",
+    "exercise": "Create a text input that displays the character count as the user types."
+  },
+  {
+    "title": "Day 15: JS: Arrays and Objects",
+    "content": "Managing data structures.",
+    "videoUrl": "https://www.youtube.com/watch?v=W1pL8D5-R_c",
+    "exercise": "Create an object representing a 'Playbook' with title, description, and lessons."
+  },
+  {
+    "title": "Day 16: CSS Frameworks Intro (Bootstrap/Tailwind)",
+    "content": "Speeding up your development.",
+    "videoUrl": "https://www.youtube.com/watch?v=vH4Y9A_jO1Y",
+    "exercise": "Re-create your navigation bar using a framework's built-in classes."
+  },
+  {
+    "title": "Day 17: Version Control with Git",
+    "content": "Tracking changes and collaborating.",
+    "videoUrl": "https://www.youtube.com/watch?v=jW_V_-h28L8",
+    "exercise": "Set up a Git repository and commit your first HTML/CSS project."
+  },
+  {
+    "title": "Day 18: Hosting & Deployment",
+    "content": "Putting your site on the internet.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M_j-kF-k8Y",
+    "exercise": "Deploy your simple HTML/CSS page to Netlify or Vercel."
+  },
+  {
+    "title": "Day 19: Web Performance Basics",
+    "content": "How to make your site load fast.",
+    "videoUrl": "https://www.youtube.com/watch?v=H7-G-v9-I88",
+    "exercise": "Optimize one image on your page using an online compressor and compare file sizes."
+  },
+  {
+    "title": "Day 20: Accessibility (a11y)",
+    "content": "Websites for everyone.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F9pY",
+    "exercise": "Audit your page for alt text on images and proper heading structure."
+  },
+  {
+    "title": "Day 21: Backend Basics (Node.js/APIs)",
+    "content": "Where the data lives.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F8z2",
+    "exercise": "Research what JSON is and why it's used for APIs."
+  },
+  {
+    "title": "Day 22: Working with Databases Intro",
+    "content": "Storing info permanently.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F7y3",
+    "exercise": "List the difference between a SQL and NoSQL database."
+  },
+  {
+    "title": "Day 23: Modern JS Frameworks Intro (React/Vue)",
+    "content": "Building complex apps.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F6x4",
+    "exercise": "Find a 'Hello World' React tutorial and read through the first 3 steps."
+  },
+  {
+    "title": "Day 24: SEO for Developers",
+    "content": "Structuring sites for search engines.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F5w5",
+    "exercise": "Add Meta tags for Title and Description to your HTML page."
+  },
+  {
+    "title": "Day 25: Browser Developer Tools",
+    "content": "Debugging like a pro.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F4v6",
+    "exercise": "Inspect a popular website and change its main heading text using DevTools."
+  },
+  {
+    "title": "Day 26: Web Security Basics",
+    "content": "Protecting users and data (HTTPS/CORS).",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F3u7",
+    "exercise": "Explain the difference between HTTP and HTTPS."
+  },
+  {
+    "title": "Day 27: Chrome Extensions & Tools",
+    "content": "Enhancing your dev workflow.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F2t8",
+    "exercise": "Install a developer extension like Wappalyzer or a Color Picker."
+  },
+  {
+    "title": "Day 28: Portfolio Building (Web)",
+    "content": "Showing your code projects.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F1s9",
+    "exercise": "Draft the 'Portfolio' section of your personal website with links to your Git/Live sites."
+  },
+  {
+    "title": "Day 29: Final Project: Personal Landing Page",
+    "content": "Applying all skills.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F0r0",
+    "exercise": "Build a responsive landing page for yourself including an intro, skills, and contact form."
+  },
+  {
+    "title": "Day 30: The Dev Journey",
+    "content": "Staying current in a fast-paced field.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-Fz91",
+    "exercise": "Set a goal to learn one specific framework or library (e.g., Next.js) next."
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Day 1: What is Automation and No-Code?",
+    "content": "Overview of tools that allow you to build and automate without code.",
+    "videoUrl": "https://www.youtube.com/watch?v=S0T-U_iP0_Q",
+    "exercise": "Identify two repetitive tasks you do daily that could potentially be automated."
+  },
+  {
+    "title": "Day 2: The No-Code Ecosystem",
+    "content": "Overview of Zapier, Make, Bubble, Airtable, and Webflow.",
+    "videoUrl": "https://www.youtube.com/watch?v=k-I5N8_h9S0",
+    "exercise": "Explore the landing pages of 3 different no-code tools and note their primary use cases."
+  },
+  {
+    "title": "Day 3: Thinking in Logic (If/Then/Else)",
+    "content": "The foundation of all automation.",
+    "videoUrl": "https://www.youtube.com/watch?v=2fWhV0g6n7E",
+    "exercise": "Write down a logic flow for an automation: 'If I receive an email with an attachment, then...'"
+  },
+  {
+    "title": "Day 4: Intro to Airtable",
+    "content": "Beyond spreadsheets: building relational databases.",
+    "videoUrl": "https://www.youtube.com/watch?v=N6R_J_vWreY",
+    "exercise": "Create a base in Airtable to track your personal tasks with fields for Name, Status, and Due Date."
+  },
+  {
+    "title": "Day 5: Airtable: Linking and Relationships",
+    "content": "How to connect different data sets together.",
+    "videoUrl": "https://www.youtube.com/watch?v=0k60_G-Gv5c",
+    "exercise": "Create a second table for 'Categories' and link it to your 'Tasks' table."
+  },
+  {
+    "title": "Day 6: Intro to Zapier",
+    "content": "Connecting apps together and moving data.",
+    "videoUrl": "https://www.youtube.com/watch?v=8mG_J8v_p9Q",
+    "exercise": "Set up a simple Zap: 'When a new row is added to a Google Sheet, send a Slack message'."
+  },
+  {
+    "title": "Day 7: Zapier: Multi-step Automations",
+    "content": "Building complex workflows.",
+    "videoUrl": "https://www.youtube.com/watch?v=48_wV2Q52fM",
+    "exercise": "Create a Zap that does 3 things: Trigger -> Add Row -> Send Email -> Create Calendar Event."
+  },
+  {
+    "title": "Day 8: Intro to Make.com",
+    "content": "Visual automation for more advanced users.",
+    "videoUrl": "https://www.youtube.com/watch?v=M9G9yEjzBWA",
+    "exercise": "Re-create your simple Zapier flow in Make to see the difference in interface."
+  },
+  {
+    "title": "Day 9: Make.com: Filters and Routers",
+    "content": "Controlling the flow of your automation.",
+    "videoUrl": "https://www.youtube.com/watch?v=7XG3_p816_c",
+    "exercise": "Add a filter to your Make scenario so it only proceeds if a specific condition is met."
+  },
+  {
+    "title": "Day 10: APIs for No-Coders",
+    "content": "Connecting to anything with a URL.",
+    "videoUrl": "https://www.youtube.com/watch?v=vV689849E2o",
+    "exercise": "Research what an 'API Key' is and where to find one for a tool like OpenAI or Gmail."
+  },
+  {
+    "title": "Day 11: Intro to Webflow",
+    "content": "Building professional websites visually.",
+    "videoUrl": "https://www.youtube.com/watch?v=x9m6-G-jM78",
+    "exercise": "Create a blank Webflow project and add a 'Section' and a 'Container'."
+  },
+  {
+    "title": "Day 12: Webflow: The Style Panel",
+    "content": "Applying CSS visually without writing code.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M7F-A-jF9k",
+    "exercise": "Change the background color, font, and padding of a card in your project."
+  },
+  {
+    "title": "Day 13: Webflow CMS Basics",
+    "content": "Powering your site with dynamic data.",
+    "videoUrl": "https://www.youtube.com/watch?v=iE1YvN_k9fM",
+    "exercise": "Create a 'Blog Post' collection in Webflow with fields for Title, Body, and Image."
+  },
+  {
+    "title": "Day 14: Integrating Zapier with Webflow",
+    "content": "Automating site updates.",
+    "videoUrl": "https://www.youtube.com/watch?v=YwLnkKkS-kI",
+    "exercise": "Set up an automation that creates a new CMS item in Webflow when a Google Form is submitted."
+  },
+  {
+    "title": "Day 15: Intro to Bubble.io",
+    "content": "Building complex web applications visually.",
+    "videoUrl": "https://www.youtube.com/watch?v=W1pL8D5-R_c",
+    "exercise": "Explore the Bubble editor and identify where the database and workflow tabs are."
+  },
+  {
+    "title": "Day 16: Bubble: Workflows and Logic",
+    "content": "Making your app 'do' things.",
+    "videoUrl": "https://www.youtube.com/watch?v=vH4Y9A_jO1Y",
+    "exercise": "Create a workflow in Bubble: 'When a button is clicked, change the text on the screen'."
+  },
+  {
+    "title": "Day 17: Bubble: Data Types and Privacy",
+    "content": "Managing user data securely.",
+    "videoUrl": "https://www.youtube.com/watch?v=jW_V_-h28L8",
+    "exercise": "Create a 'User Profile' data type in Bubble with fields for Bio and Profile Picture."
+  },
+  {
+    "title": "Day 18: No-Code Mobile Apps (Adalo/Glide)",
+    "content": "Building apps directly for phone screens.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M_j-kF-k8Y",
+    "exercise": "Create a simple list app in Glide from a Google Sheet."
+  },
+  {
+    "title": "Day 19: AI + Automation (No-Code AI)",
+    "content": "Integrating GPT-4 into your workflows.",
+    "videoUrl": "https://www.youtube.com/watch?v=H7-G-v9-I88",
+    "exercise": "Create a flow that takes an email, summarizes it using AI, and sends a summary to Slack."
+  },
+  {
+    "title": "Day 20: Scraping Data without Code (Browse.ai/Apify)",
+    "content": "Gathering info automatically.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F9pY",
+    "exercise": "Use a browser extension to 'scrape' a list of products from an e-commerce page into a CSV."
+  },
+  {
+    "title": "Day 21: Error Handling in Automation",
+    "content": "What happens when things break?",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F8z4",
+    "exercise": "Research what a 'Webhook' is and why it's faster than polling for data."
+  },
+  {
+    "title": "Day 22: Developing a 'No-Code' Solution for a Business",
+    "content": "Mapping out the problem first.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F7y5",
+    "exercise": "Select a local business and map out how automation could save them 5 hours a week."
+  },
+  {
+    "title": "Day 23: Dashboard Design (Softr/Stacker)",
+    "content": "Building portals for clients and internal teams.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F6x6",
+    "exercise": "Connect Softr to an Airtable base and display the data as a list of items."
+  },
+  {
+    "title": "Day 24: SEO for No-Code Sites",
+    "content": "Optimizing Webflow and Bubble for search.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F5w7",
+    "exercise": "Check the SEO settings in a Webflow project and add global meta tags."
+  },
+  {
+    "title": "Day 25: Performance & Optimization in No-Code",
+    "content": "Keeping your apps fast as they grow.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F4v8",
+    "exercise": "Research how to use 'Backend Workflows' in Bubble to improve app speed."
+  },
+  {
+    "title": "Day 26: Launching and Testing",
+    "content": "Deploying your no-code project to the world.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F3u9",
+    "exercise": "Run a 'test run' of your automation with different inputs to check for edge cases."
+  },
+  {
+    "title": "Day 27: Documenting your Automation",
+    "content": "So others (and future you) understand it.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F2tA",
+    "exercise": "Create a loom video or a document explaining how one of your workflows works."
+  },
+  {
+    "title": "Day 28: Developing your Portfolio",
+    "content": "Showing the 'Under the Hood' of your solutions.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F1sg",
+    "exercise": "Choose your best automation project and write a brief case study on the time/money it saves."
+  },
+  {
+    "title": "Day 29: Final Project: The Automated Business Bot",
+    "content": "Putting it all together.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F0r2",
+    "exercise": "Build a complete system where a user submits a form, AI processes it, and a customized result is emailed and stored."
+  },
+  {
+    "title": "Day 30: The Future of No-Code",
+    "content": "Staying on the cutting edge of visual development.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-Fz93",
+    "exercise": "Establish a goal to learn one advanced platform (like FlutterFlow) or a coding fundamental."
+  }
+]

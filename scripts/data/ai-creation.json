@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Day 1: The GenAI Landscape",
+    "content": "Theory: Understanding the difference between LLMs (Text), Diffusion (Images), and Generative Video.",
+    "videoUrl": "https://www.youtube.com/watch?v=2T_mS4X8yvE",
+    "exercise": "Exercise: List 5 tasks in your daily life that currently take 30+ minutes and could be \"AI-assisted.\""
+  },
+  {
+    "title": "Day 2: The Master Prompt Formula",
+    "content": "Theory: Context-Task-Constraint-Output. Why \"Write a blog post\" is a bad prompt.",
+    "videoUrl": "https://www.youtube.com/watch?v=jC4v5AS4RIM",
+    "exercise": "Exercise: Use the formula to generate a 300-word article on any topic. Iterate 3 times until the tone is perfect."
+  },
+  {
+    "title": "Day 3: Chain of Thought Logic",
+    "content": "Theory: Asking AI to \"think step-by-step.\" This reduces \"hallucinations\" and improves logic.",
+    "videoUrl": "https://www.youtube.com/watch?v=2Lp_mE6_N_g",
+    "exercise": "Exercise: Prompt an AI to solve a complex business problem, forcing it to explain its reasoning at every step."
+  },
+  {
+    "title": "Day 4: AI for Deep Research",
+    "content": "Theory: Using AI to summarize long documents and find patterns in data.",
+    "videoUrl": "https://www.youtube.com/watch?v=dBWj3vaEy5o",
+    "exercise": "Exercise: Feed a long article or transcript into an AI and ask it to find 3 \"Counter-intuitive\" insights from the text."
+  },
+  {
+    "title": "Day 5: Persona Engineering",
+    "content": "Theory: How to \"prime\" the AI to act as an expert (e.g., a Yale-educated editor or a Top-tier marketer).",
+    "videoUrl": "https://www.youtube.com/watch?v=aee9ySpGXBs",
+    "exercise": "Exercise: Build a \"Custom Instruction\" for an AI to act as a cynical, high-level business consultant."
+  },
+  {
+    "title": "Day 6: Fact-Checking & Veracity",
+    "content": "Theory: Why AI lies and how to catch it. Using search-integrated tools to verify claims.",
+    "videoUrl": "https://www.youtube.com/watch?v=jC4v5AS4RIM",
+    "exercise": "Exercise: Generate 5 \"facts\" about an obscure topic, then use manual search to verify if the AI was correct."
+  },
+  {
+    "title": "Day 7: Custom GPTs & Gems",
+    "content": "Theory: Building your own specialized \"Mini-AI\" tools for repetitive tasks.",
+    "videoUrl": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+    "exercise": "Exercise: Create an AI \"Gem\" or \"GPT\" whose only job is to rewrite your rough notes into professional emails."
+  },
+  {
+    "title": "Day 8: AI Image Generation",
+    "content": "Theory: Prompting for visuals. Understanding lighting, camera angles, and style keywords.",
+    "videoUrl": "https://www.youtube.com/watch?v=fS0_2L8E5iE",
+    "exercise": "Exercise: Generate 5 professional product shots for a fictional brand. Use keywords like \"Depth of Field\" and \"Studio Lighting.\""
+  },
+  {
+    "title": "Day 9: Consistent Characters",
+    "content": "Theory: The \"Reference\" technique. How to keep the same person or object across multiple images.",
+    "videoUrl": "https://www.youtube.com/watch?v=2Lp_mE6_N_g",
+    "exercise": "Exercise: Generate a character. Now, generate that same character in a completely different environment/outfit."
+  },
+  {
+    "title": "Day 10: AI for UI & Graphic Design",
+    "content": "Theory: Using AI to brainstorm layouts, mood boards, and logo concepts.",
+    "videoUrl": "https://www.youtube.com/watch?v=dXQ7IHkTiMM",
+    "exercise": "Exercise: Use an image generator to create 3 \"Mood Boards\" for a tech startup brand."
+  },
+  {
+    "title": "Day 11: Text-to-Video Basics",
+    "content": "Theory: Moving from static to motion. Principles of AI video prompting (pacing, motion, camera moves).",
+    "videoUrl": "https://www.youtube.com/watch?v=mGo718Z_tHg",
+    "exercise": "Exercise: Create a 5-second cinematic clip of a \"futuristic city\" using a text-to-video tool."
+  },
+  {
+    "title": "Day 12: AI Audio & Music",
+    "content": "Theory: Generating background tracks and voiceovers that don't sound like robots.",
+    "videoUrl": "https://www.youtube.com/watch?v=T67pE7GzOEc",
+    "exercise": "Exercise: Generate a 30-second background track and a 10-second voiceover. Combine them in an editor."
+  },
+  {
+    "title": "Day 13: Social Media Assets",
+    "content": "Theory: Using AI to create high-click-rate thumbnails and backgrounds.",
+    "videoUrl": "https://www.youtube.com/watch?v=iL8SK8t5CvM",
+    "exercise": "Exercise: Use AI to generate a background for a YouTube thumbnail that is \"High Contrast\" and \"Vibrant.\""
+  },
+  {
+    "title": "Day 14: The Multi-modal Workflow",
+    "content": "Theory: Combining Text + Image + Video into a single production pipeline.",
+    "videoUrl": "https://www.youtube.com/watch?v=4RIVYyXyTUc",
+    "exercise": "Exercise: Use AI to write a 15-second ad script, generate a matching image, and create a video clip."
+  },
+  {
+    "title": "Day 15: AI for Data Analysis",
+    "content": "Theory: Feeding AI spreadsheets to find trends, averages, and outliers.",
+    "videoUrl": "https://www.youtube.com/watch?v=mGo718Z_tHg",
+    "exercise": "Exercise: Upload a CSV of data (or paste a table) and ask the AI to \"Visualize the 3 most important trends.\""
+  },
+  {
+    "title": "Day 16: Coding with AI (No-Code)",
+    "content": "Theory: Using AI to write HTML, CSS, or Python scripts even if you aren't a coder.",
+    "videoUrl": "https://www.youtube.com/watch?v=dXQ7IHkTiMM",
+    "exercise": "Exercise: Use AI to write the code for a simple \"Calculator\" or \"Countdown Timer\" and test it in a browser."
+  },
+  {
+    "title": "Day 17: AI Personal Knowledge Bases",
+    "content": "Theory: Connecting AI to your own notes to build a \"Second Brain.\"",
+    "videoUrl": "https://www.youtube.com/watch?v=T67pE7GzOEc",
+    "exercise": "Exercise: Ask an AI to summarize your last 5 \"Exercise\" responses from this course and find a common theme."
+  },
+  {
+    "title": "Day 18: AI for Email Automation",
+    "content": "Theory: Integrating AI into tools like Zapier to handle communications.",
+    "videoUrl": "https://www.youtube.com/watch?v=q6_y4DInK3s",
+    "exercise": "Exercise: Write a \"logic flow\" for an AI that reads an email and decides if it's \"Spam,\" \"Urgent,\" or \"General.\""
+  },
+  {
+    "title": "Day 19: Presentation Design",
+    "content": "Theory: Using AI to outline, write, and suggest visuals for pitch decks.",
+    "videoUrl": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+    "exercise": "Exercise: Use AI to generate an 8-slide outline for a product launch."
+  },
+  {
+    "title": "Day 20: Autonomous Agents",
+    "content": "Theory: The future of AI. Software that can perform multi-step tasks without human input.",
+    "videoUrl": "https://www.youtube.com/watch?v=q6_y4DInK3s",
+    "exercise": "Exercise: Map out a \"Task Chain\" for an agent that researches a company and drafts a custom pitch."
+  },
+  {
+    "title": "Day 21: Content Scaling",
+    "content": "Theory: 1 Concept -> 100 Assets. How to use AI to repurpose content across platforms.",
+    "videoUrl": "https://www.youtube.com/watch?v=iL8SK8t5CvM",
+    "exercise": "Exercise: Take one long-form blog post and use AI to turn it into 5 Tweets, 3 LinkedIn posts, and 1 Reel script."
+  },
+  {
+    "title": "Day 22: Ethics & Copyright",
+    "content": "Theory: Who owns AI art? Understanding the legal landscape of 2026.",
+    "videoUrl": "https://www.youtube.com/watch?v=2T_mS4X8yvE",
+    "exercise": "Exercise: Research the \"SynthID\" or watermarking policies of your favorite AI tool."
+  },
+  {
+    "title": "Day 23: Personal Brand Strategy",
+    "content": "Theory: Using AI to find your \"Unique Angle\" in a crowded market.",
+    "videoUrl": "https://www.youtube.com/watch?v=ScAUIpzlPqs",
+    "exercise": "Exercise: Ask an AI to \"Audit\" your current brand idea and find 3 \"Weaknesses\" in your positioning."
+  },
+  {
+    "title": "Day 24: Productizing AI Services",
+    "content": "Theory: How to sell \"AI Workflows\" to businesses as a high-ticket consultant.",
+    "videoUrl": "https://www.youtube.com/watch?v=u-xHBzuHpf8",
+    "exercise": "Exercise: Define one \"AI-Powered\" service (e.g., \"AI Content Engine\") and list exactly what the client receives."
+  },
+  {
+    "title": "Day 25: System Audit",
+    "content": "Theory: Finding the \"bottlenecks\" in your AI workflows. Where are you still doing too much manual work?",
+    "videoUrl": "https://www.youtube.com/watch?v=O8k05rXurU0",
+    "exercise": "Exercise: Review your most-used prompt. Rewrite it to be 50% shorter but 2x more effective."
+  },
+  {
+    "title": "Day 26: Training vs. Prompting",
+    "content": "Theory: Understanding Fine-tuning and RAG (Retrieval Augmented Generation) in simple terms.",
+    "videoUrl": "https://www.youtube.com/watch?v=jC4v5AS4RIM",
+    "exercise": "Exercise: Research the difference between \"uploading a file\" to an AI vs. \"training\" an AI on that file."
+  },
+  {
+    "title": "Day 27: The Human-in-the-Loop",
+    "content": "Theory: Why \"100% AI\" content fails. The 80/20 rule: AI does 80%, Human does the final 20%.",
+    "videoUrl": "https://www.youtube.com/watch?v=aee9ySpGXBs",
+    "exercise": "Exercise: Take an AI-generated post and spend 45 minutes \"Humanizing\" it with personal stories and unique opinions."
+  },
+  {
+    "title": "Day 28: Pitching AI Workflows",
+    "content": "Theory: Selling the \"Time Saved.\" How to convince a business owner to adopt AI.",
+    "videoUrl": "https://www.youtube.com/watch?v=ivKzP88_V_U",
+    "exercise": "Exercise: Write a pitch to a local business owner explaining how they can save 10 hours a week using AI."
+  },
+  {
+    "title": "Day 29: The AI Portfolio",
+    "content": "Theory: How to show AI work without looking like a \"cheater.\" Highlighting the process and results.",
+    "videoUrl": "https://www.youtube.com/watch?v=QPD8S_dowCE",
+    "exercise": "Exercise: Create a \"Case Study\" for your Day 21 exercise, showing the \"Input\" vs. \"Output.\""
+  },
+  {
+    "title": "Day 30: Future-Proofing Your Skill",
+    "content": "Theory: The 90-day learning loop. AI moves fast; how do you stay an \"expert\"?",
+    "videoUrl": "https://www.youtube.com/watch?v=2T_mS4X8yvE",
+    "exercise": "Exercise: Set a \"Learning Schedule\" for the next 3 months to keep your AI skills sharp."
+  }
+]

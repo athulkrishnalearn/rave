@@ -1,0 +1,224 @@
+[
+  {
+    "title": "DAY 1: Foundations – How Search Engines Work & Keyword Research",
+    "objective": "By the end of Day 1, you will understand how search engines crawl, index, and rank websites, and you'll perform your first keyword research.",
+    "detailedContent": [
+      {
+        "title": "Search Engines Decoded",
+        "content": "Google and Bing perform three main tasks: Crawling (discovery), Indexing (storage), and Ranking (delivery). They reward Relevance, Authority, and User Experience."
+      },
+      {
+        "title": "Keyword Research – The Foundation",
+        "content": "Keywords are the terms people search for. Understanding intent (Informational, Navigational, Commercial, Transactional) is key to choosing the right ones. Tools like Google Keyword Planner and Ubersuggest help find search volume and difficulty."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=DvwS7cV9GmQ",
+      "title": "SEO for Beginners: Rank #1 In Google",
+      "description": "Brian Dean from Backlinko explains how search engines work and covers the basics of keyword research."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Intent Identification (15 minutes)",
+        "steps": [
+          "Brainstorm 10 seed keywords for your niche",
+          "Label each as Informational, Navigational, Commercial, or Transactional"
+        ]
+      },
+      {
+        "title": "Exercise 2: Keyword Expansion (15 minutes)",
+        "steps": [
+          "Use Google Autocomplete and Ubersuggest to expand your list to 20+ keywords",
+          "Identify 3-5 focus keywords based on volume and difficulty"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Why is it more important to understand searcher intent than just finding high-volume keywords?"
+  },
+  {
+    "title": "DAY 2: On-Page SEO – Optimizing Individual Pages",
+    "objective": "By the end of Day 2, you will be able to optimize a web page's content and HTML elements for target keywords.",
+    "detailedContent": [
+      {
+        "title": "Optimizing On-Page Elements",
+        "content": "- **Title Tag:** Clickable headline in results (under 60 characters).\n- **Meta Description:** Summary snippet (under 160 characters).\n- **Headings (H1-H3):** Content structure and hierarchy.\n- **URL Structure:** Descriptive, hyphenated slugs."
+      },
+      {
+        "title": "Content and Media",
+        "content": "Write for humans first. Use related keywords (LSI) naturally. Optimize images with descriptive filenames and alt text for both accessibility and SEO."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=M2_AtV49HTo",
+      "title": "On-Page SEO Tutorial for Beginners",
+      "description": "A comprehensive guide to title tags, meta descriptions, and semantic heading structure."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Title & Meta Crafting (15 minutes)",
+        "steps": [
+          "Write 3 title tag variations and a meta description for a focus keyword from Day 1"
+        ]
+      },
+      {
+        "title": "Exercise 2: Page Audit (15 minutes)",
+        "steps": [
+          "Analyze the #1 result for your primary keyword and note their heading structure and image alt text"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How does clear heading structure (H1-H3) help both the user and the search engine?"
+  },
+  {
+    "title": "DAY 3: Technical SEO – Foundations of Searchability",
+    "objective": "By the end of Day 3, you will understand site speed, mobile-friendliness, crawlability, and indexing.",
+    "detailedContent": [
+      {
+        "title": "The Infrastructure",
+        "content": "**Crawlability:** Ensuring robots.txt and XML sitemaps are correctly configured.\n**Performance:** Site speed is critical. Compress images, minify code, and use fast hosting."
+      },
+      {
+        "title": "Accessibility and Security",
+        "content": "Google uses mobile-first indexing. Your site must be responsive and secure (HTTPS is a ranking factor)."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=6mH6E7r8-mI",
+      "title": "Technical SEO Audit in 20 Minutes",
+      "description": "Brian Dean's practical walkthrough for spotting indexing blocks and performance bottlenecks."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Performance Audit (15 minutes)",
+        "steps": [
+          "Run a site through Google PageSpeed Insights and note 3 required technical improvements"
+        ]
+      },
+      {
+        "title": "Exercise 2: Sitemap Verification (10 minutes)",
+        "steps": [
+          "Find a site's /sitemap.xml and check if it includes all major pages"
+        ]
+      }
+    ],
+    "reflectionPrompt": "If a site is slow but has great content, why might it still struggle to rank?"
+  },
+  {
+    "title": "DAY 4: Off-Page SEO – Building Authority with Backlinks",
+    "objective": "By the end of Day 4, you will understand the importance of backlinks and have an ethical acquisition strategy.",
+    "detailedContent": [
+      {
+        "title": "The Web of Trust",
+        "content": "Backlinks are votes of confidence. Authority, relevance, and natural placement are key. \n- **Dofollow vs Nofollow:** Understanding which links pass SEO juice.\n- **White-Hat Strategies:** Guest blogging, skyscrapers, and broken link building."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=C5S_OIdoUeU",
+      "title": "Link Building for Beginners",
+      "description": "Learn why backlinks remain a top ranking factor and how to earn them ethically."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Competitor Backlink Analysis (15 minutes)",
+        "steps": [
+          "Use a free backlink checker to find the top 5 domains linking to a competitor"
+        ]
+      },
+      {
+        "title": "Exercise 2: Linkable Asset Brainstorm (15 minutes)",
+        "steps": [
+          "Design the concept for an 'Ultimate Guide' or 'Infographic' that other sites in your niche would want to link to"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What makes a backlink from a high-authority news site more valuable than 100 links from small forums?"
+  },
+  {
+    "title": "DAY 5: Local SEO & Content Strategy",
+    "objective": "By the end of Day 5, you will understand local search optimization and topic cluster strategy.",
+    "detailedContent": [
+      {
+        "title": "Local Search",
+        "content": "Google Business Profile is the heartbeat of local search. Consistent Name, Address, and Phone (NAP) across directories build trust for location-based services."
+      },
+      {
+        "title": "Topic Clusters",
+        "content": "Create Pillar content (comprehensive guides) and Cluster subtopics that link back to it to build topical authority."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=3A-m9q_7G2U",
+      "title": "How to Rank Your Local Business in Google Maps",
+      "description": "Essential optimizations for capturing customers searching 'near me'."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Local Audit (15 minutes)",
+        "steps": [
+          "Audit a local business's presence across Google, Yelp, and their website for NAP consistency"
+        ]
+      },
+      {
+        "title": "Exercise 2: Content Calendar (15 minutes)",
+        "steps": [
+          "Plan a 1-month calendar with 4 pieces of content linked to one pillar topic"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How do reviews impact both search rankings and actual customer behavior?"
+  },
+  {
+    "title": "DAY 6: SEO Tools & Analytics – Measuring Success",
+    "objective": "By the end of Day 6, you will be able to use Google Search Console and Analytics to track performance.",
+    "detailedContent": [
+      {
+        "title": "What Gets Measured Gets Managed",
+        "content": "- **Google Search Console (GSC):** Clicks, impressions, and index status.\n- **Google Analytics (GA4):** User behavior, bounce rates, and conversions.\n- **KPIs:** Impressions, CTR, Average Position, and Bounce Rate."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=vVj_Q09G0I8",
+      "title": "How to Use Google Search Console",
+      "description": "Master the tool that tells you exactly how Google sees and ranks your site."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Data Interpretation (15 minutes)",
+        "steps": [
+          "Identify query terms that have high impressions but low CTR—how could you fix them?"
+        ]
+      },
+      {
+        "title": "Exercise 2: Speed vs Data (10 minutes)",
+        "steps": [
+          "Correlate a page's bounce rate with its Core Web Vitals performance"
+        ]
+      }
+    ],
+    "reflectionPrompt": "If clicks are low but impressions are high, is the problem the content or the Title/Meta snippet?"
+  },
+  {
+    "title": "DAY 7: Final Project – Complete SEO Strategy",
+    "objective": "By the end of Day 7, you will have created a comprehensive SEO strategy roadmap.",
+    "detailedContent": [
+      {
+        "title": "The Master Roadmap",
+        "content": "**A complete SEO strategy includes:**\n1. Keyword Research & Mapping.\n2. On-Page Optimization Plan.\n3. Technical SEO Audit Checklist.\n4. Link Building & Outreach Strategy.\n5. Content Cluster Plan.\n6. Multi-month implementation timeline."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "SEO Strategy That Works (Step-by-Step)",
+      "description": "Brian Dean's final walkthrough of bringing all SEO disciplines together for long-term organic growth."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The SEO Master Plan (90+ minutes)",
+        "steps": [
+          "Develop a 90-day SEO roadmap for a real or fictional site including all pillars learned this week"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What is the very first SEO change you would implement on a site to get the fastest result?"
+  }
+]

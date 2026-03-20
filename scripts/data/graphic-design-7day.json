@@ -1,0 +1,249 @@
+[
+  {
+    "title": "DAY 1: Foundations – Design Principles & Your First Project",
+    "objective": "By the end of Day 1, you will understand the core principles of design, have your software installed, and create your first simple design.",
+    "detailedContent": [
+      {
+        "title": "The 5 Core Design Principles",
+        "content": "Great design isn't magic – it's the application of fundamental principles:\n\n1. **Contrast:** Creates visual interest and guides attention (Color, Size, Font).\n2. **Alignment:** Creates order and intentionality.\n3. **Repetition:** Creates consistency and unity (Colors, Fonts, Styles).\n4. **Proximity:** Group related items together to show relationships.\n5. **Balance:** Distribution of visual weight (Symmetrical or Asymmetrical)."
+      },
+      {
+        "title": "Choosing Your Design Software",
+        "content": "**Recommended for Beginners:**\n- **Canva:** Easiest for social media and quick designs.\n- **Figma:** Best for UI/UX and collaborative vector work.\n- **Adobe Express:** Gentle curve, professional results.\n\nStart with Canva or Figma to learn the principles. They transfer to any professional software later."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=YqQx75OPRa0",
+      "title": "The Basic Elements of Design",
+      "description": "Chris Do from The Futur explains the fundamental building blocks of graphic design."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Software Setup & Exploration (10 minutes)",
+        "steps": [
+          "Install Canva or Figma and locate the Text, Shape, and Layer tools"
+        ]
+      },
+      {
+        "title": "Exercise 2: Finding Inspiration (10 minutes)",
+        "steps": [
+          "Save 5 designs from Pinterest or Behance and identify the CRAP principles (Contrast, Repetition, Alignment, Proximity)"
+        ]
+      },
+      {
+        "title": "Exercise 3: Your First Design (20 minutes)",
+        "steps": [
+          "Create a 1080x1080px quote graphic for social media",
+          "Apply contrast for readability and alignment for order"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How did it feel to create my first design? Which principle was the hardest to apply?"
+  },
+  {
+    "title": "DAY 2: Typography – The Art of Working with Text",
+    "objective": "By the end of Day 2, you will understand how to choose, combine, and style fonts like a professional designer.",
+    "detailedContent": [
+      {
+        "title": "Type is Voice",
+        "content": "Typography conveys personality before a word is read.\n\n**Common Categories:**\n- **Serif:** Formal, traditional (Merriweather).\n- **Sans-Serif:** Modern, clean (Roboto).\n- **Script:** Creative, personal (use sparingly).\n\n**Golden Rules:**\n1. Limit to 2-3 fonts per design.\n2. Create contrast between headline and body.\n3. Establish clear hierarchy through size and weight.\n4. Watch your leading (line spacing) and tracking (letter spacing)."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=sByzHoiYFX0",
+      "title": "Beginning Graphic Design: Typography",
+      "description": "A clear, concise introduction to font types and professional styling."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Font Recognition (10 minutes)",
+        "steps": [
+          "Identify the font categories used by 3 brands you love"
+        ]
+      },
+      {
+        "title": "Exercise 2: Font Pairings (15 minutes)",
+        "steps": [
+          "Find 3 pairings on Google Fonts (e.g., Bold Serif headline + Simple Sans-serif body)"
+        ]
+      },
+      {
+        "title": "Exercise 3: Typographic Redesign (15 minutes)",
+        "steps": [
+          "Redesign yesterday's quote using your new font pairing and hierarchy rules"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How does typography change the feeling of my design?"
+  },
+  {
+    "title": "DAY 3: Color Theory – Mastering the Palette",
+    "objective": "By the end of Day 3, you will understand color relationships and create harmonious palettes.",
+    "detailedContent": [
+      {
+        "title": "The Psychology of Color",
+        "content": "Color is emotion. Choose wisely.\n\n**Harmonies:**\n- **Monochromatic:** Different shades of one color (Calm).\n- **Analogous:** Colors next to each other (Serene).\n- **Complementary:** Opposites on the wheel (Energetic/High Contrast).\n\n**The 60-30-10 Rule:**\n- 60% Primary color (Main background).\n- 30% Secondary color (Support elements).\n- 10% Accent color (Call to action/Details)."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=_2LLXnUdUIc",
+      "title": "Beginning Graphic Design: Color",
+      "description": "Learn the color wheel and how to build palettes that work."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Brand Color Audit (10 minutes)",
+        "steps": [
+          "Pick 3 brands and list their Primary, Secondary, and Accent colors"
+        ]
+      },
+      {
+        "title": "Exercise 2: Palette Creation (10 minutes)",
+        "steps": [
+          "Use Coolors.co to create one Monochromatic, one Analogous, and one Complementary palette"
+        ]
+      },
+      {
+        "title": "Exercise 3: Color Application (10 minutes)",
+        "steps": [
+          "Apply your favorite palette to your quote design using the 60-30-10 rule"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What surprised me about color accessibility and contrast?"
+  },
+  {
+    "title": "DAY 4: Working with Images, Icons, & Illustrations",
+    "objective": "By the end of Day 4, you will know how to source, edit, and combine visual elements effectively.",
+    "detailedContent": [
+      {
+        "title": "Visual Elements That Enhance Your Message",
+        "content": "**Images:** Use high-quality stock (Unsplash, Pexels). Crop for focus, never stretch.\n**Icons:** Visual shorthand. Use consistently (Noun Project, Flaticon).\n**Illustrations:** Add custom personality (Blush, Humaaans).\n\n**Composition Tip:** maintains style consistency. Don't mix minimal line icons with hyper-realistic 3D illustrations unless intended for contrast."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "The Difference Between Illustration and Photography in Design",
+      "description": "The Futur explains when to use each for maximum brand impact."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Asset Library Build (10 minutes)",
+        "steps": [
+          "Download 5 photos, 5 icons, and 5 illustrations for your future projects"
+        ]
+      },
+      {
+        "title": "Exercise 2: Image + Text Design (15 minutes)",
+        "steps": [
+          "Create a graphic using a full-bleed photo background and legible text overlay"
+        ]
+      },
+      {
+        "title": "Exercise 3: Icon Grid (10 minutes)",
+        "steps": [
+          "Design a 'Features' section using icons to represent 3 different services"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Which visual element do I enjoy working with most?"
+  },
+  {
+    "title": "DAY 5: Layout & Composition",
+    "objective": "By the end of Day 5, you will be able to create balanced layouts using grids and hierarchy.",
+    "detailedContent": [
+      {
+        "title": "Arranging Elements for Impact",
+        "content": "**The Grid System:** Use columns and rows to create order. It's the skeleton of your design.\n**Visual Hierarchy:** Guide the eye using Size, Color, and Position.\n**Whitespace:** It's not empty; it's room to breathe. Reduces overwhelm and adds sophistication.\n**Scanning Patterns:** Use the F-pattern (text-heavy) or Z-pattern (visual-heavy) to place key information."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=a5KYlHNKQB8",
+      "title": "Beginning Graphic Design: Layout & Composition",
+      "description": "Master the art of arranging elements on a canvas or page."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Hierarchy Audit (10 minutes)",
+        "steps": [
+          "Find 3 designs and number the order in which your eye sees the elements"
+        ]
+      },
+      {
+        "title": "Exercise 2: Grid Setup (10 minutes)",
+        "steps": [
+          "Set up a 12-column grid in your software and align a complex layout to it"
+        ]
+      },
+      {
+        "title": "Exercise 3: The Whitespace Test (10 minutes)",
+        "steps": [
+          "Take a crowded design, remove 30% of content, and increase spacing. Notice the improvement."
+        ]
+      }
+    ],
+    "reflectionPrompt": "How did using a grid change my design process?"
+  },
+  {
+    "title": "DAY 6: Brand Identity & Style Guides",
+    "objective": "By the end of Day 6, you will understand how to create consistent brand visuals.",
+    "detailedContent": [
+      {
+        "title": "Design with Consistency",
+        "content": "**Brand Identity Components:**\n- **Logo:** The face of the brand (plus simplified variations).\n- **Color Palette:** Hex codes for digital consistency.\n- **Typography:** Set pairings for headlines and body.\n- **Imagery Style:** Consistent mood for photos/icons.\n\n**The Style Guide:** A document that ensures anyone can create on-brand designs for the company."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "How to Create a Brand Style Guide",
+      "description": "A walkthrough of building a comprehensive brand rulebook."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Brand Definition (10 minutes)",
+        "steps": [
+          "Create a fictional brand: Name, Industry, and 3 personality adjectives"
+        ]
+      },
+      {
+        "title": "Exercise 2: Logo Concept (15 minutes)",
+        "steps": [
+          "Design a simple wordmark or symbol-based logo for your brand"
+        ]
+      },
+      {
+        "title": "Exercise 3: One-Page Style Guide (20 minutes)",
+        "steps": [
+          "Create a sheet showing your Logo, Palette (Hex codes), and Fonts"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How could a style guide help me in real-world design projects?"
+  },
+  {
+    "title": "DAY 7: Final Project – Your Complete Brand Kit",
+    "objective": "By the end of Day 7, you will have designed a complete cohesive brand kit for your portfolio.",
+    "detailedContent": [
+      {
+        "title": "The Grand Showcase",
+        "content": "**Brand Kit Requirements:**\n1. Finalized Logo with variations.\n2. Cohesive Color Palette & Typography.\n3. Professional Business Card design.\n4. Branded Social Media graphic.\n5. One Additional Piece (Flyer, Web Banner, etc.).\n\nConsistency is the ultimate metric here. All pieces should feel like they belong to the same family."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "Design a Brand Identity from Start to Finish",
+      "description": "Watch the full creative process from brief to final delivery."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The Final Brand Kit (90+ minutes)",
+        "steps": [
+          "Execute the full identity for your Day 6 brand",
+          "Create the Logo, Card, Social Post, and Bonus piece",
+          "Assemble them into a one-page Brand Showcase presentation"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Compare this to your Day 1 design. What are the three biggest skills you've gained?"
+  }
+]

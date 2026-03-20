@@ -1,0 +1,217 @@
+[
+  {
+    "title": "DAY 1: Foundations – Understanding AI & Setting Up Your Toolkit",
+    "objective": "By the end of Day 1, you will understand what generative AI is, how it works, and have your essential AI tools set up and ready to use.",
+    "detailedContent": [
+      {
+        "title": "Generative AI – Your Creative Partner",
+        "content": "Generative AI creates new content (text, images, video) based on patterns from existing data. It's like a highly knowledgeable assistant that's read the entire internet.\n\n**Key Concepts:**\n- **Prompt:** Your instruction to the AI.\n- **Tokens:** Units of text the AI processes.\n- **Hallucination:** When AI confidently provides incorrect info."
+      },
+      {
+        "title": "Essential Toolkit",
+        "content": "Set up these free accounts:\n- **ChatGPT/Claude:** For text and complex reasoning.\n- **Leonardo.ai:** For high-quality image generation.\n- **ElevenLabs:** For realistic voice manipulation.\n- **Runway/CapCut:** For AI video creation."
+      },
+      {
+        "title": "Prompt Engineering Formula",
+        "content": "AI is only as good as your prompts. Use this formula:\n`[Context] + [Task] + [Format] + [Tone] + [Constraints]`"
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=uKbe9p_fS0Y",
+      "title": "ChatGPT Tutorial for Beginners",
+      "description": "Kevin Stratvert covers the essential basics of prompting and interacting with modern LLMs."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Account Setup (15 minutes)",
+        "steps": [
+          "Create accounts on ChatGPT, Leonardo.ai, and Canva"
+        ]
+      },
+      {
+        "title": "Exercise 2: Basic vs. Advanced Prompting (15 minutes)",
+        "steps": [
+          "Run a simple prompt: 'Give me 10 gardening video ideas'",
+          "Run a refined prompt: 'You are a professional gardener. Create 10 video ideas for beginners including titles and pro-tips'",
+          "Compare the depth and quality of the results"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What surprised me most about the difference between a simple and a refined prompt?"
+  },
+  {
+    "title": "DAY 2: Text Generation – Writing with AI",
+    "objective": "By the end of Day 2, you will be able to generate high-quality written content using advanced prompting techniques.",
+    "detailedContent": [
+      {
+        "title": "Advanced Prompting Techniques",
+        "content": "1. **Persona Prompting:** 'You are a seasoned copywriter...'.\n2. **Few-Shot Prompting:** Give examples of the style you want first.\n3. **Chain-of-Thought:** Ask the AI to 'Think step-by-step'.\n4. **Iterative Refinement:** Treat the conversation as an evolving draft."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=Fj-Y6dG9BwQ",
+      "title": "How to Write Blog Posts with AI",
+      "description": "A practical workflow for using AI as a brainstorming partner and first-draft generator."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Brainstorming (10 minutes)",
+        "steps": [
+          "Use ChatGPT to generate 20 content ideas for your specific niche"
+        ]
+      },
+      {
+        "title": "Exercise 2: Multi-Format Repurposing (20 minutes)",
+        "steps": [
+          "Generate a blog intro, then ask the AI to rewrite it as 3 Instagram captions and a short email newsletter"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How much time did AI save me in the brainstorming phase compared to doing it manually?"
+  },
+  {
+    "title": "DAY 3: Image Generation – Creating Visuals with AI",
+    "objective": "By the end of Day 3, you will be able to generate stunning images and integrate them into your content.",
+    "detailedContent": [
+      {
+        "title": "Turning Words Into Pictures",
+        "content": "AI image generators use diffusion models to refine noise into art.\n\n**Anatomy of an Image Prompt:**\n- **Subject:** What is it? (Golden retriever, futuristic car)\n- **Details:** Actions, textures, lighting.\n- **Style:** Photorealistic, Oil painting, 3D render.\n- **Composition:** Cinematic, overhead, wide angle."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=R9pS6nshOaw",
+      "title": "How to Use Leonardo AI",
+      "description": "Learn to use one of the most powerful and accessible web-based image generators."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Style Exploration (15 minutes)",
+        "steps": [
+          "Generate the same subject (e.g., 'Mountain lake') in 4 different styles: Photorealistic, Anime, Sketch, and Cyberpunk"
+        ]
+      },
+      {
+        "title": "Exercise 2: Asset Creation (15 minutes)",
+        "steps": [
+          "Create a professional flat-lay image for a social media background using specific lighting and mood keywords"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Which visual style felt most aligned with my personal brand or project needs?"
+  },
+  {
+    "title": "DAY 4: Audio & Voice – Generating Voiceovers and Music",
+    "objective": "By the end of Day 4, you will be able to create realistic voiceovers and original music tracks.",
+    "detailedContent": [
+      {
+        "title": "AI Gives Your Content a Voice",
+        "content": "Audio is half the experience. \n- **ElevenLabs:** Industry leader for text-to-speech with human-like emotion.\n- **Suno/Udio:** Generate original, high-fidelity music from text descriptions.\n\n**Best Practices:** Always check licenses for commercial use and be transparent when using synthetic voices for sensitive topics."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "ElevenLabs Tutorial – Best AI Voice Generator",
+      "description": "Master the settings for stability, clarity, and style to get the most natural narration."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Voiceover Mastery (15 minutes)",
+        "steps": [
+          "Generate a 3-sentence intro script using two different voices and compare the emotional tone"
+        ]
+      },
+      {
+        "title": "Exercise 2: Music Production (15 minutes)",
+        "steps": [
+          "Use Suno to create a 30-second lo-fi back-track for a study video"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Did the AI voice sound human enough to fool me? Where could I use this in my current workflow?"
+  },
+  {
+    "title": "DAY 5: Video Creation & Editing with AI",
+    "objective": "By the end of Day 5, you will be able to generate video clips and use AI editing assistance.",
+    "detailedContent": [
+      {
+        "title": "AI Is Reshaping Video",
+        "content": "Video used to be the hardest format to master. Now:\n- **Text-to-Video:** Generate short B-roll clips (Runway, Pika).\n- **AI Editing:** Auto-captions, background removal, and 'Magic' transitions in tools like CapCut.\n- **Talking Heads:** Presenters created from text (HeyGen)."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "Runway Gen-2 Tutorial",
+      "description": "Learn to generate cinematic video clips from simple text prompts."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: B-Roll Generation (15 minutes)",
+        "steps": [
+          "Generate a 4-second clip of a cinematic landscape or action sequence"
+        ]
+      },
+      {
+        "title": "Exercise 2: AI Editing (15 minutes)",
+        "steps": [
+          "Use CapCut's auto-caption feature on a short video and refine the styling effortlessly"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What is the biggest limitation of AI video right now, and how can I work around it?"
+  },
+  {
+    "title": "DAY 6: Workflow Integration – Repurposing & Automation",
+    "objective": "By the end of Day 6, you will be able to build AI-powered workflows to maximize reach.",
+    "detailedContent": [
+      {
+        "title": "Work Smarter, Not Harder",
+        "content": "The real power is in the **Repurposing Funnel**:\n1. Create a Core Asset (e.g., Long video).\n2. AI Transcribes (CapCut).\n3. AI Summarizes & Rewrites (ChatGPT) into tweets, blogs, and emails.\n4. AI Visualizes (Leonardo) into thumbnails and quote cards."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "AI Content Repurposing Workflow",
+      "description": "Ryan Robinson demonstrates how to turn one podcast or video into 10+ pieces of content."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The Funnel Test (20 minutes)",
+        "steps": [
+          "Take a transcript of a 5-minute video and use AI to generate 5 tweets and 1 LinkedIn post"
+        ]
+      },
+      {
+        "title": "Exercise 2: Visual Repurposing (10 minutes)",
+        "steps": [
+          "Create a quote card image using a key insight from your transcript"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How many hours a week could I save if I automated my content repurposing?"
+  },
+  {
+    "title": "DAY 7: Final Project – Multi-Format AI Content Package",
+    "objective": "By the end of Day 7, you will have created a complete content package using multiple AI tools.",
+    "detailedContent": [
+      {
+        "title": "The Grand Finale",
+        "content": "**Project Requirements:**\n- 1 Long-form article (Text AI).\n- 3 Social Media posts (Repurposed).\n- 1 Custom Image (Image AI).\n- 1 Short Video/Voiceover clip (Video/Audio AI).\n- 1 Email Newsletter (Drafted by AI).\n\nConsistency across formats is the goal. Use AI to maintain the same voice and style throughout."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "AI Content Creation – Full Project Workflow",
+      "description": "A start-to-finish demonstration of creating a complete campaign using only AI tools."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The Master Campaign (90+ minutes)",
+        "steps": [
+          "Execute the full content plan for a single topic",
+          "Assemble all pieces into a single showcase folder"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Compare your perspective on AI from Day 1 to now. How has your 'creative partner' changed your process?"
+  }
+]

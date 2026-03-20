@@ -1,0 +1,265 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  /* ── RAVE Design System 2.0 ────────────────────────────────────── */
+  /* Clean, minimal, scroll-addictive. Neutral base, action accents. */
+
+  --background: #F7F7F8;
+  /* Page / surface bg */
+  --foreground: #18181B;
+  /* Primary text */
+
+  --card: #FFFFFF;
+  /* Card / panel bg */
+  --card-foreground: #18181B;
+
+  --primary: #18181B;
+  /* CTA / active */
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #F4F4F5;
+  --secondary-foreground: #52525B;
+
+  --accent: #18181B;
+  --accent-foreground: #FFFFFF;
+
+  --muted: #F4F4F5;
+  --muted-foreground: #71717A;
+
+  --border: #E8E8E8;
+  /* Subtle card borders */
+  --input: #E8E8E8;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  --radius: 12px;
+}
+
+/* No dark-mode override — force light always for consistency across all devices */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+/* ── Base ───────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Scrollbar Polish ──────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ── Input Base (globally consistent) ────────────────────────────
+   All inputs by default get a visible border and light bg.
+   Pages can override with specific classes.
+*/
+input,
+textarea,
+select {
+  background-color: var(--background);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+  display: block;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 4px rgba(24, 24, 27, 0.05);
+}
+
+/* ── Alignment Utilities ── */
+.input-icon-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.input-icon-right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #A1A1AA;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+/* ── Search Bar Modern Flex Container ── */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 1px solid #E8E8E8;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.search-bar-container:focus-within {
+  border-color: #18181B;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+}
+
+.search-bar-input {
+  flex: 1;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.input-icon-wrapper:focus-within .input-icon {
+  color: var(--primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #A1A1AA;
+}
+
+/* ── Card ──────────────────────────────────────────────────────── */
+.rave-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* ── Primary Button ────────────────────────────────────────────── */
+.rave-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #18181B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.rave-btn:hover {
+  background: #3F3F46;
+}
+
+.rave-btn:active {
+  transform: scale(0.97);
+}
+
+/* ── Tactile Button (legacy compat) ───────────────────────────── */
+.tactile-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #18181B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.tactile-btn:hover {
+  background: #3F3F46;
+}
+
+.tactile-btn:active {
+  transform: scale(0.97);
+}
+
+/* ── Utility ───────────────────────────────────────────────────── */
+.rave-page {
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  /* mobile dock clearance */
+  font-family: var(--font-sans);
+}
+
+@media (min-width: 768px) {
+  .rave-page {
+    padding-bottom: 0;
+    padding-left: 64px;
+    /* sidebar rail */
+  }
+}
+
+.rave-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+@media (min-width: 768px) {
+  .rave-inner {
+    padding: 32px 24px;
+  }
+}

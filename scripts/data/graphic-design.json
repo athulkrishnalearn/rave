@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Day 1: Typography 101",
+    "content": "Theory: Anatomy of type, Serif vs. Sans-Serif, and the emotion of fonts.",
+    "videoUrl": "https://www.youtube.com/watch?v=sByzHoiYFX0",
+    "exercise": "Exercise: Choose 3 global brands. Identify their font style and write 2 sentences on why that font fits their \"personality.\""
+  },
+  {
+    "title": "Day 2: Color Theory",
+    "content": "Theory: Harmonies, contrast, and psychological triggers of color.",
+    "videoUrl": "https://www.youtube.com/watch?v=L1LX_6Hn59w",
+    "exercise": "Exercise: Create 3 distinct color palettes (5 colors each) for: a Luxury Spa, a Cyberpunk Game, and a Kids' Toy Store."
+  },
+  {
+    "title": "Day 3: Grid Systems",
+    "content": "Theory: How to use columns and gutters to create order and balance.",
+    "videoUrl": "https://www.youtube.com/watch?v=VlS-FAn7Y9U",
+    "exercise": "Exercise: Draw a 12-column grid on paper. Sketch 3 different ways to arrange a headline, an image, and a button on that grid."
+  },
+  {
+    "title": "Day 4: Visual Hierarchy",
+    "content": "Theory: Guiding the eye. Using scale, weight, and color to show the viewer what to look at first.",
+    "videoUrl": "https://www.youtube.com/watch?v=W-LzH-K1I_o",
+    "exercise": "Exercise: Redesign a crowded event flyer. Ensure the \"Benefit/Hook\" is seen first, and the \"Date/Location\" second."
+  },
+  {
+    "title": "Day 5: White Space",
+    "content": "Theory: The power of \"Negative Space.\" Why breathing room increases a design's value.",
+    "videoUrl": "https://www.youtube.com/watch?v=2T_mS4X8yvE",
+    "exercise": "Exercise: Take a cluttered social media post. Remove 30% of the elements and rearrange the rest to focus on a single message."
+  },
+  {
+    "title": "Day 6: Contrast & Repetition",
+    "content": "Theory: Making elements stand out vs. making them feel like a family.",
+    "videoUrl": "https://www.youtube.com/watch?v=yW8S_N6A4_8",
+    "exercise": "Exercise: Design 3 different website buttons that use different colors but share the exact same shape and \"feel.\""
+  },
+  {
+    "title": "Day 7: The Visual Audit",
+    "content": "Theory: Deconstructing professional design to understand the \"logic.\"",
+    "videoUrl": "https://www.youtube.com/watch?v=yW8S_N6A4_8",
+    "exercise": "Exercise: Find a world-class ad. List the specific fonts, primary/secondary colors, and the type of grid it uses."
+  },
+  {
+    "title": "Day 8: Vector vs. Raster",
+    "content": "Theory: Why logos must be vectors (Illustrator/Figma) and photos are rasters (Photoshop).",
+    "videoUrl": "https://www.youtube.com/watch?v=rX_v_mJ1G-E",
+    "exercise": "Exercise: Open any design tool. Export a simple circle as a PNG and an SVG. Zoom in 1000% on both and note the difference."
+  },
+  {
+    "title": "Day 9: The Pen Tool Mastery",
+    "content": "Theory: Anchor points, paths, and handles. The fundamental skill of vector drawing.",
+    "videoUrl": "https://www.youtube.com/watch?v=2u7ijgxFOHc",
+    "exercise": "Exercise: Find a logo with curves (like Apple or Twitter). Use the Pen Tool to trace the outline perfectly."
+  },
+  {
+    "title": "Day 10: Shape Builder Tool",
+    "content": "Theory: Creating complex shapes from simple circles and squares.",
+    "videoUrl": "https://www.youtube.com/watch?v=uXG6PivvSCo",
+    "exercise": "Exercise: Create a complex icon (e.g., a \"Cloud\" or a \"House\") using only 5 basic geometric shapes and the \"Unite\" or \"Exclude\" functions."
+  },
+  {
+    "title": "Day 11: Layers & Groups",
+    "content": "Theory: Organizing a professional \"Kitchen.\" Naming and grouping so others can edit your work.",
+    "videoUrl": "https://www.youtube.com/watch?v=v9I9DAnNidA",
+    "exercise": "Exercise: Build a composite of 10 items. Every layer must be named, and groups must be logically color-coded."
+  },
+  {
+    "title": "Day 12: Selection & Masking",
+    "content": "Theory: \"Non-destructive\" editing. Removing backgrounds and hiding parts of an image without deleting pixels.",
+    "videoUrl": "https://www.youtube.com/watch?v=v9I9DAnNidA",
+    "exercise": "Exercise: Cut a person out of a photo and place them on a clean, solid background. Use a mask, not an eraser."
+  },
+  {
+    "title": "Day 13: Brushes & Textures",
+    "content": "Theory: Adding \"soul\" to flat designs. Using grit and grain to create a premium, tactile feel.",
+    "videoUrl": "https://www.youtube.com/watch?v=O8_Y0wJg42U",
+    "exercise": "Exercise: Take a flat circle and use a texture brush to make it look like a 3D, weathered piece of metal."
+  },
+  {
+    "title": "Day 14: Typography Layouts",
+    "content": "Theory: Kerning (letter space) and Leading (line space).",
+    "videoUrl": "https://www.youtube.com/watch?v=sByzHoiYFX0",
+    "exercise": "Exercise: Format a paragraph of text. Adjust the leading and kerning until it looks professional and is incredibly easy to read."
+  },
+  {
+    "title": "Day 15: Logo Symbolism",
+    "content": "Theory: Creating marks with meaning. The difference between a \"symbol\" and an \"illustration.\"",
+    "videoUrl": "https://www.youtube.com/watch?v=uXG6PivvSCo",
+    "exercise": "Exercise: Sketch 10 tiny \"thumbnail\" concepts for a logo for a company called \"Swift Delivery.\""
+  },
+  {
+    "title": "Day 16: Brand Identity Boards",
+    "content": "Theory: Building a visual ecosystem. Logo + Fonts + Colors.",
+    "videoUrl": "https://www.youtube.com/watch?v=L1LX_6Hn59w",
+    "exercise": "Exercise: Create a 1-page \"Brand Board\" for a fictional tech startup. Show how the fonts and colors complement the logo."
+  },
+  {
+    "title": "Day 17: Social Carousels",
+    "content": "Theory: Designing for \"The Swipe.\" Creating seamless transitions between slides.",
+    "videoUrl": "https://www.youtube.com/watch?v=iL8SK8t5CvM",
+    "exercise": "Exercise: Design 5 carousel slides in Figma. Ensure an image from Slide 1 \"bleeds\" over into Slide 2."
+  },
+  {
+    "title": "Day 18: YouTube Thumbnails",
+    "content": "Theory: High-contrast design for tiny screens. Why faces and big text get clicks.",
+    "videoUrl": "https://www.youtube.com/watch?v=S2u_1O6hQ2s",
+    "exercise": "Exercise: Design a thumbnail for a video titled \"How to Rich.\" Use a bold face and high-contrast text."
+  },
+  {
+    "title": "Day 19: Poster & Flyer Design",
+    "content": "Theory: Combining all Week 1 principles into a large-scale layout.",
+    "videoUrl": "https://www.youtube.com/watch?v=W-LzH-K1I_o",
+    "exercise": "Exercise: Design a vertical poster for a local music festival. Focus on a clear hierarchy of information."
+  },
+  {
+    "title": "Day 20: Ad Banner Design",
+    "content": "Theory: Action-oriented design. Making the \"Button\" the hero of the ad.",
+    "videoUrl": "https://www.youtube.com/watch?v=u-xHBzuHpf8",
+    "exercise": "Exercise: Create a square \"Sale\" ad. The button must be the most prominent visual element after the headline."
+  },
+  {
+    "title": "Day 21: Presentation Design",
+    "content": "Theory: Designing for data. How to make charts and lists look professional and clear.",
+    "videoUrl": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+    "exercise": "Exercise: Design 3 slides: a Title slide, a \"Stats\" slide with a bar chart, and a \"Meet the Team\" slide."
+  },
+  {
+    "title": "Day 22: UI Basics (Mobile)",
+    "content": "Theory: Designing for fingers. Proper button sizes and spacing for mobile apps.",
+    "videoUrl": "https://www.youtube.com/watch?v=dXQ7IHkTiMM",
+    "exercise": "Exercise: In Figma, design a simple \"Sign Up\" screen for a fitness app."
+  },
+  {
+    "title": "Day 23: UX (User Experience)",
+    "content": "Theory: Flow and accessibility. How a user moves through a digital product.",
+    "videoUrl": "https://www.youtube.com/watch?v=L1LX_6Hn59w",
+    "exercise": "Exercise: Map out the \"User Flow\" (Step 1, Step 2, Step 3) for buying a ticket on a cinema app."
+  },
+  {
+    "title": "Day 24: Real-world Mockups",
+    "content": "Theory: Presenting your work. How to place your art on real-life objects using templates.",
+    "videoUrl": "https://www.youtube.com/watch?v=uXG6PivvSCo",
+    "exercise": "Exercise: Take your Day 15 logo and place it onto a high-quality mockup of a coffee cup or a building."
+  },
+  {
+    "title": "Day 25: Print Design (CMYK)",
+    "content": "Theory: Bleeds, margins, and the CMYK vs. RGB color space.",
+    "videoUrl": "https://www.youtube.com/watch?v=rX_v_mJ1G-E",
+    "exercise": "Exercise: Set up a document for a business card. Include a 0.125-inch \"Bleed\" and set the color mode to CMYK."
+  },
+  {
+    "title": "Day 26: The Revision Process",
+    "content": "Theory: Dealing with feedback. How to fix a design without losing its core quality.",
+    "videoUrl": "https://www.youtube.com/watch?v=yW8S_N6A4_8",
+    "exercise": "Exercise: Take your Day 19 poster. Imagine a client said \"Make the text bigger.\" Do it without breaking the hierarchy."
+  },
+  {
+    "title": "Day 27: Speed Challenge",
+    "content": "Theory: Efficiency under pressure. Making fast decisions without sacrificing quality.",
+    "videoUrl": "https://www.youtube.com/watch?v=uXG6PivvSCo",
+    "exercise": "Exercise: Set a timer for 20 minutes. Design a logo for a \"Pizza Place\" from scratch."
+  },
+  {
+    "title": "Day 28: Portfolio Selection",
+    "content": "Theory: Quality over quantity. Choosing the \"Big 3\" that show your range.",
+    "videoUrl": "https://www.youtube.com/watch?v=QPD8S_dowCE",
+    "exercise": "Exercise: Select your 3 best projects from the month. Write a 2-sentence \"Goal\" and \"Solution\" for each."
+  },
+  {
+    "title": "Day 29: Portfolio Presentation",
+    "content": "Theory: Storytelling your work. How to show the \"Process,\" not just the final result.",
+    "videoUrl": "https://www.youtube.com/watch?v=QPD8S_dowCE",
+    "exercise": "Exercise: Upload your Big 3 to a Behance profile. Include a screenshot of your \"Rough Sketches\" for each."
+  },
+  {
+    "title": "Day 30: Final Review",
+    "content": "Theory: The \"Expert\" polish. Fixing the small details that 99% of people miss.",
+    "videoUrl": "https://www.youtube.com/watch?v=W-LzH-K1I_o",
+    "exercise": "Exercise: Find a design from Week 1. Redesign it using everything you learned in Week 4."
+  }
+]

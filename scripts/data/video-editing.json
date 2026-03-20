@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Day 1: Intro to Video Editing",
+    "content": "Basics of the craft and software overview.",
+    "videoUrl": "https://www.youtube.com/watch?v=uKbe9p_fS0Y",
+    "exercise": "Install a video editing software (DaVinci Resolve or Premiere Pro) and import your first clip."
+  },
+  {
+    "title": "Day 2: Interface & Organization",
+    "content": "How to set up your workspace and organize assets.",
+    "videoUrl": "https://www.youtube.com/watch?v=vV689849E2o",
+    "exercise": "Create a folder structure for a new project: Footage, Audio, Assets, Renders."
+  },
+  {
+    "title": "Day 3: The Timeline Basics",
+    "content": "Cutting, trimming, and moving clips.",
+    "videoUrl": "https://www.youtube.com/watch?v=k-I5N8_h9S0",
+    "exercise": "Add 3 clips to the timeline and perform simple J-cuts and L-cuts."
+  },
+  {
+    "title": "Day 4: Audio Basics",
+    "content": "Levelling and cleaning up sound.",
+    "videoUrl": "https://www.youtube.com/watch?v=S0T-U_iP0_Q",
+    "exercise": "Balance the background music with a voiceover track so the voice is clear."
+  },
+  {
+    "title": "Day 5: Transitions Done Right",
+    "content": "When and how to use cuts, fades, and wipes.",
+    "videoUrl": "https://www.youtube.com/watch?v=8mG_J8v_p9Q",
+    "exercise": "Edit a 30-second sequence using only 'invisible' cuts."
+  },
+  {
+    "title": "Day 6: Color Correction Basics",
+    "content": "Fixing exposure and white balance.",
+    "videoUrl": "https://www.youtube.com/watch?v=M9G9yEjzBWA",
+    "exercise": "Correct the colors of a clip that looks too blue or too yellow."
+  },
+  {
+    "title": "Day 7: Simple Titles & Text",
+    "content": "Adding information and style with text.",
+    "videoUrl": "https://www.youtube.com/watch?v=7XG3_p816_c",
+    "exercise": "Create an intro title and lower thirds for a speaker."
+  },
+  {
+    "title": "Day 8: Speed Ramping",
+    "content": "Using slow motion and fast motion for energy.",
+    "videoUrl": "https://www.youtube.com/watch?v=Gk74D_A2YSw",
+    "exercise": "Apply a speed ramp to a clip of someone walking or a vehicle moving."
+  },
+  {
+    "title": "Day 9: B-Roll Mastery",
+    "content": "Using secondary footage to tell a better story.",
+    "videoUrl": "https://www.youtube.com/watch?v=vV689849E21",
+    "exercise": "Edit a talking head video and overlay relevant B-roll clips."
+  },
+  {
+    "title": "Day 10: Sound Design & SFX",
+    "content": "Enhancing the atmosphere with sound effects.",
+    "videoUrl": "https://www.youtube.com/watch?v=x9m6-G-jM79",
+    "exercise": "Add whooshes to transitions and ambient sounds to a landscape shot."
+  },
+  {
+    "title": "Day 11: Masking Basics",
+    "content": "Isolating areas of your video for effects.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M7F-A-jF9k",
+    "exercise": "Mask out a moving object and change the color of the background."
+  },
+  {
+    "title": "Day 12: Keyframing Basics",
+    "content": "Animating properties over time.",
+    "videoUrl": "https://www.youtube.com/watch?v=iE1YvN_k9fM",
+    "exercise": "Animate a zoom-in on a photo over 5 seconds."
+  },
+  {
+    "title": "Day 13: Multi-cam Editing",
+    "content": "Editing footage from multiple cameras.",
+    "videoUrl": "https://www.youtube.com/watch?v=YwLnkKkS-kI",
+    "exercise": "Sync 2 audio/video sources and switch between them in a project."
+  },
+  {
+    "title": "Day 14: Green Screen (Chroma Key)",
+    "content": "Replacing backgrounds efficiently.",
+    "videoUrl": "https://www.youtube.com/watch?v=W1pL8D5-R_c",
+    "exercise": "Remove a green background and replace it with a studio backdrop."
+  },
+  {
+    "title": "Day 15: Exporting for Different Platforms",
+    "content": "Codecs, resolutions, and aspect ratios.",
+    "videoUrl": "https://www.youtube.com/watch?v=vH4Y9A_jO1Y",
+    "exercise": "Export the same video in 16:9 (YouTube) and 9:16 (TikTok) formats."
+  },
+  {
+    "title": "Day 16: Advanced Color Grading",
+    "content": "Creating a 'look' using LUTs and wheels.",
+    "videoUrl": "https://www.youtube.com/watch?v=jW_V_-h28L7",
+    "exercise": "Create a 'cinematic' look for a beach scene."
+  },
+  {
+    "title": "Day 17: Motion Graphics Intro",
+    "content": "Simple animations in your editor.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M_j-kF-k8X",
+    "exercise": "Animate a call-to-action button (Subscribe/Follow)."
+  },
+  {
+    "title": "Day 18: Storytelling & Rhythm",
+    "content": "The psychology of the edit.",
+    "videoUrl": "https://www.youtube.com/watch?v=H7-G-v9-I87",
+    "exercise": "Edit a 1-minute video that builds tension and then releases it."
+  },
+  {
+    "title": "Day 19: Working with Subtitles",
+    "content": "Making your content accessible and engaging.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F9pY",
+    "exercise": "Auto-generate and style captions for a 1-minute video."
+  },
+  {
+    "title": "Day 20: Advanced Sound Mixing",
+    "content": "Equalization, Compression, and Limiting.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F8z",
+    "exercise": "Mix a project with voice, music, and SFX to industry standards (-3dB peak)."
+  },
+  {
+    "title": "Day 21: Effects & Plugins",
+    "content": "Beyond the built-in tools.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F7y",
+    "exercise": "Apply an external plugin or template to your project."
+  },
+  {
+    "title": "Day 22: Proxy Workflow",
+    "content": "Editing high-res footage on a low-end computer.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F6x",
+    "exercise": "Generate proxies for a 4K clip and toggle between them."
+  },
+  {
+    "title": "Day 23: Vertical Video Masterclass",
+    "content": "Specific techniques for Reels and TikTok.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F5w",
+    "exercise": "Re-edit a horizontal video into a dynamic vertical video."
+  },
+  {
+    "title": "Day 24: Archiving & Project Management",
+    "content": "How to save projects for the long term.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F4v",
+    "exercise": "Archive a finished project including all linked media."
+  },
+  {
+    "title": "Day 25: Working with Clients",
+    "content": "Feedback cycles and revision management.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F3u",
+    "exercise": "Mock up a versioning system (v1, v2, Final_v1, etc.) for a project."
+  },
+  {
+    "title": "Day 26: AI Tools in Video Editing",
+    "content": "Using AI for cutting, filling, and sound.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F2t",
+    "exercise": "Use an AI tool (like Adobe Podcast or Topaz) to enhance a low-quality clip."
+  },
+  {
+    "title": "Day 27: Finding Your Style",
+    "content": "Developing a consistent visual voice.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F1s",
+    "exercise": "Analyze your favorite editor and list 3 specific techniques they use."
+  },
+  {
+    "title": "Day 28: Portfolio Building",
+    "content": "How to show your work to get hired.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F0r",
+    "exercise": "Draft the layout for your video editing showreel."
+  },
+  {
+    "title": "Day 29: Final Project: The Showreel",
+    "content": "Creating your best work yet.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-Fz9",
+    "exercise": "Edit a 60-second showreel using everything you've learned."
+  },
+  {
+    "title": "Day 30: The Journey Ahead",
+    "content": "Staying relevant in an evolving field.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-Fy8",
+    "exercise": "Set a goal to master one advanced technique (e.g., 3D tracking) next month."
+  }
+]

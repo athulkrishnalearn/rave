@@ -1,0 +1,214 @@
+[
+  {
+    "title": "DAY 1: Foundations – What Is Automation & Getting Started",
+    "objective": "By the end of Day 1, you will understand the basics of no-code automation, know the key platforms, and have your accounts set up.",
+    "detailedContent": [
+      {
+        "title": "Automation = Letting Software Work",
+        "content": "No-code platforms let you connect apps without writing code. You build **workflows** (Zaps or Scenarios) that move data based on triggers and actions.\n\n**Core Concepts:**\n- **Trigger:** The event that starts the flow (e.g., New Email).\n- **Action:** The task performed (e.g., Send Slack Msg).\n- **Filter:** A condition to continue or stop."
+      },
+      {
+        "title": "Platform Selection",
+        "content": "- **Zapier:** Best for beginners, 5,000+ apps.\n- **Make:** Visual builder, powerful for complex logic.\n- **n8n:** Advanced, open-source, developer-friendly."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=L_G-m-mC0p8",
+      "title": "Zapier Tutorial for Beginners",
+      "description": "Learn how to use Zapier to automate your work and connect your favorite apps."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Account Setup (10 minutes)",
+        "steps": [
+          "Create free accounts on Zapier, Make, and Airtable"
+        ]
+      },
+      {
+        "title": "Exercise 2: Workflow Mapping (10 minutes)",
+        "steps": [
+          "Identify 3 repetitive tasks in your life",
+          "For one task, write down its Trigger and required Action"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Which app in your daily life would you benefit most from connecting to an automation?"
+  },
+  {
+    "title": "DAY 2: Building Basic Workflows – Triggers and Actions",
+    "objective": "By the end of Day 2, you will be able to create a simple two-step automation connecting two apps.",
+    "detailedContent": [
+      {
+        "title": "Your First Robot",
+        "content": "A basic workflow follows a simple path: Choose Trigger → Connect Account → Test → Choose Action → Map Fields → Go Live.\n\n**Field Mapping:** This is where you tell the 'Action' app which piece of information from the 'Trigger' app it should use. For example, taking the 'Subject' of an email and putting it into a Slack message."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=8jL2X6y_h9c",
+      "title": "Make Beginner Tutorial – First Scenario",
+      "description": "A visual guide to building your first automation scenario in Make (Integromat)."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The 'Hello World' Zap (15 minutes)",
+        "steps": [
+          "Build a workflow that sends a Slack message when you receive a specific email",
+          "Test the 'Field Mapping' by including the sender's name in the message"
+        ]
+      },
+      {
+        "title": "Exercise 2: Form to Sheet (15 minutes)",
+        "steps": [
+          "Connect a Google Form to a Google Sheet so every new response adds a new row automatically"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What was the most rewarding part of seeing your first automation run successfully?"
+  },
+  {
+    "title": "DAY 3: Intermediate Workflows – Filters and Paths",
+    "objective": "By the end of Day 3, you will be able to build multi-step automations with conditional logic.",
+    "detailedContent": [
+      {
+        "title": "Adding Intelligence",
+        "content": "**Filters:** Act as gatekeepers. Only let the workflow continue if conditions are met (e.g., 'If Subject contains Urgent').\n**Paths/Routers:** Create branches. Send 'Urgent' emails to Slack and 'Billing' emails to a spreadsheet.\n**Formatter:** Tools to change date formats, capitalize text, or perform math before the next step."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=FmS_39K_P3o",
+      "title": "Make Router & Filters Tutorial",
+      "description": "Master the art of conditional branching and logic filtering in your automations."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The Priority Filter (15 minutes)",
+        "steps": [
+          "Add a filter to an existing Zap so it only runs if the email subject contains a specific keyword"
+        ]
+      },
+      {
+        "title": "Exercise 2: Multi-Action Chain (15 minutes)",
+        "steps": [
+          "Build a flow where a single trigger kicks off 3 different actions: Log to Sheet, Send Slack, and Add to Calendar"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How could conditional logic (Filters/Paths) help you manage your personal notifications better?"
+  },
+  {
+    "title": "DAY 4: Integrating AI Agents into Your Workflows",
+    "objective": "By the end of Day 4, you will be able to incorporate AI tools like ChatGPT into your automations.",
+    "detailedContent": [
+      {
+        "title": "Automation + AI Superpowers",
+        "content": "AI can summarize long emails, categorize support tickets, or generate personalized replies automatically. \n\n**Prompt Engineering for Robots:** When using AI in a workflow, use lower 'temperature' settings (0.1–0.3) for consistent results and be very specific about the required output format (e.g. 'Summarize in exactly 5 words')."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=W6D_7IuC_Uo",
+      "title": "Automate ChatGPT with Zapier",
+      "description": "Connect OpenAI to your daily tools to summarize, draft, and analyze content on autopilot."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The AI Summarizer (20 minutes)",
+        "steps": [
+          "Create a workflow that takes a long email, sends it to ChatGPT for a 1-sentence summary, and Slacks that summary to you"
+        ]
+      },
+      {
+        "title": "Exercise 2: Intent Classifier (15 minutes)",
+        "steps": [
+          "Ask AI to classify a form submission as 'Technical', 'Billing', or 'Other' and route it to a specific sheet column"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Where in your current workflow is 'human-like judgment' (AI) the missing link for full automation?"
+  },
+  {
+    "title": "DAY 5: Data Management – Spreadsheets and Databases",
+    "objective": "By the end of Day 5, you will be able to automate data entry, updates, and reporting using databases.",
+    "detailedContent": [
+      {
+        "title": "The Data Lifecycle",
+        "content": "Modern automations center around data. \n- **Google Sheets:** The 'Universal Glue' for simple logging.\n- **Airtable:** A 'Smart Database' that handles complex relationships and internal automations.\n\n**Lookup Strategy:** Use 'Find Row' actions to check if a person already exists in your database before creating a new record to avoid duplicates."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=F_Y_qDkD77k",
+      "title": "Airtable + Make Full Tutorial",
+      "description": "Learn to manage complex data projects by connecting your workspace to a powerful database."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Lead Capture & Log (15 minutes)",
+        "steps": [
+          "Build a flow: Form Submit -> Find if user exists? -> If no, Add to Sheet -> If yes, Update last contact date"
+        ]
+      },
+      {
+        "title": "Exercise 2: Daily Digest (15 minutes)",
+        "steps": [
+          "Schedule a flow that sums up all new entries in a sheet and emails you a 'Daily Report' at 9 AM"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How does using a 'Find' step before a 'Create' step make your automations more reliable?"
+  },
+  {
+    "title": "DAY 6: End-to-End Business Process Automation",
+    "objective": "By the end of Day 6, you will be able to design and build end-to-end automations for real business scenarios.",
+    "detailedContent": [
+      {
+        "title": "The Full Pipeline",
+        "content": "Today is about combining Triggers, Filters, AI, and Databases into a single cohesive process. \n\n**Business Scenarios:**\n1. **Lead Nurture:** Form → AI Score → If high: Slack/CRM; If low: Email List.\n2. **Content Pipeline:** RSS feed → AI Summarize → AI Caption → Social Schedule (Buffer).\n3. **Support System:** Email → AI Category → Priority Filter → Alert Team."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=O1S_Tz_vC7g",
+      "title": "Build a Complete Lead System with Make",
+      "description": "A start-to-finish demonstration of a professional-grade automation build."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Process Flowchart (10 minutes)",
+        "steps": [
+          "Draw the logic for a 5-step business process (e.g. On-boarding a new client)"
+        ]
+      },
+      {
+        "title": "Exercise 2: The Core Build (30 minutes)",
+        "steps": [
+          "Implement the first 3 steps of your flowchart in your chosen platform with real data mapping"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What is one 'Error Handling' step you should add to ensure your business doesn't miss a lead?"
+  },
+  {
+    "title": "DAY 7: Final Project – Build Your Own Automation",
+    "objective": "By the end of Day 7, you will have designed, built, and documented a complete automation project.",
+    "detailedContent": [
+      {
+        "title": "The Master Project",
+        "content": "**Final Requirements:**\n- 1 Clear Trigger + 3+ Actions.\n- At least 1 conditional branch (Filter/Path).\n- Integration of an AI Agent (ChatGPT).\n- A Data storage component (Sheet/Airtable).\n- Documented 'How it works' guide."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "Full Automation Project Walkthrough",
+      "description": "A final look at how to tackle a complex build from idea to production."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The Grand Build (90+ minutes)",
+        "steps": [
+          "Execute your full plan",
+          "Conduct 'stress tests' with edge-case data",
+          "Write a 1-page PDF manual for your automation"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What is the very first task you will teach your 'robots' to do tomorrow morning?"
+  }
+]

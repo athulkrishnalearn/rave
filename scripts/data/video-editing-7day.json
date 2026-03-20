@@ -1,0 +1,255 @@
+[
+  {
+    "title": "DAY 1: Getting Started – Your Editing Environment & First Cut",
+    "objective": "By the end of Day 1, you will have editing software installed, understand the interface, and make your very first simple edit.",
+    "detailedContent": [
+      {
+        "title": "Choosing Your Editing Software",
+        "content": "The best editing software is the one you'll actually use. \n\n**Free Options (Highly Recommended to Start):**\n- **DaVinci Resolve:** Windows/Mac. Professional standard for color.\n- **CapCut:** Windows/Mac/Mobile. Easiest for social media content.\n- **iMovie:** Mac only. Simple and intuitive.\n\n**Common Interface Elements:**\n1. **Media Bin:** Where you store footage.\n2. **Preview Monitor:** Watch clips before timeline.\n3. **Timeline:** Where you build your story.\n4. **Toolbar:** Tools for cutting and moving."
+      },
+      {
+        "title": "Your First Edit – The Three‑Clip Story",
+        "content": "You don't need fancy effects to tell a story. Today you'll edit three simple clips in order to show a simple action: someone walking into a room, sitting down, and picking up a book.\n\n**Key Terms:**\n- **Clip:** A single piece of footage.\n- **Sequence:** Your project timeline.\n- **Track:** Layers in the timeline.\n- **Export:** Creating the final video file."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=uKbe9p_fS0Y",
+      "title": "How to Edit Videos for Absolute Beginners",
+      "description": "Think Media covers the fundamental concepts that apply to any editing software."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Software Setup & Exploration (15 minutes)",
+        "steps": [
+          "Install DaVinci Resolve or CapCut",
+          "Open and locate the media bin, timeline, and export buttons"
+        ]
+      },
+      {
+        "title": "Exercise 2: The Three-Clip Edit (20 minutes)",
+        "steps": [
+          "Shoot or download 3 clips: walking to door, sitting, picking up a book",
+          "Import and name clearly (walk_in, sit_down, pick_book)",
+          "Drag to timeline in order and trim the ends for clean transitions"
+        ]
+      },
+      {
+        "title": "Exercise 3: Export Your First Video (5 minutes)",
+        "steps": [
+          "Export as H.264/MP4 and watch your 10-second story"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How did it feel to make my first edit? What part of the software felt confusing?"
+  },
+  {
+    "title": "DAY 2: The Art of the Cut – Techniques & Pacing",
+    "objective": "By the end of Day 2, you will understand different types of cuts and how to use them to control pacing and emotion.",
+    "detailedContent": [
+      {
+        "title": "Cuts Are the Language of Film",
+        "content": "In editing, cuts are punctuation. \n\n**Essential Cut Types:**\n1. **Standard Cut:** Switching from one clip to next.\n2. **Jump Cut:** Removing a middle section (good for vlogs).\n3. **J‑Cut:** Audio from next clip starts *before* video cuts.\n4. **L‑Cut:** Video from previous clip continues while audio from next starts.\n5. **Cutaway:** Cutting to a detail shot before cutting back.\n\n**Pacing:** How long each shot stays on screen. Fast = energy/chaos; Slow = calm/reflection."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=8mG_J8v_p9Q",
+      "title": "7 Types of Cuts Every Video Editor Should Know",
+      "description": "StudioBinder explains cinematic cuts with great visual examples."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Dialogue Practice (15 minutes)",
+        "steps": [
+          "Import a dialogue clip of two people talking",
+          "Practice standard cuts between the speakers"
+        ]
+      },
+      {
+        "title": "Exercise 2: Mastering J-Cuts & L-Cuts (15 minutes)",
+        "steps": [
+          "Create a J-cut so B starts speaking while we still see A",
+          "Create an L-cut to show B's reaction while A is still speaking"
+        ]
+      },
+      {
+        "title": "Exercise 3: Pacing Challenge (5 minutes)",
+        "steps": [
+          "Edit a 5-clip sequence in two versions: 1 second per shot (fast) and 4 seconds per shot (slow)",
+          "Observe how the emotion changes"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Which cut type feels most useful for my projects? What did I notice about pacing?"
+  },
+  {
+    "title": "DAY 3: Audio Editing – The 50% of Your Video",
+    "objective": "By the end of Day 3, you will be able to clean up audio, balance levels, add music, and use sound effects.",
+    "detailedContent": [
+      {
+        "title": "Audio Makes or Breaks Your Video",
+        "content": "BAD audio ruins GOOD video. \n\n**The Three Audio Layers:**\n1. **Dialogue:** Most important. Must be clear.\n2. **Music:** Sets emotion.\n3. **SFX:** Adds realism.\n\n**Basic Audio Workflow:**\n- **Set levels:** Dialogue at -12dB to -6dB. Music lower (-20dB).\n- **Keyframing:** Use to fade in/out or 'duck' music under voices.\n- **Noise Reduction:** Remove hum and hiss."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=S0T-U_iP0_Q",
+      "title": "Audio Editing for Video Beginners – Complete Guide",
+      "description": "Learn to manage audio layers and professional mixing techniques."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Set Dialogue Levels (10 minutes)",
+        "steps": [
+          "Import dialogue and adjust volume to hit -12dB to -6dB peaks"
+        ]
+      },
+      {
+        "title": "Exercise 2: Music & Ducking (20 minutes)",
+        "steps": [
+          "Add music track and lower its baseline volume",
+          "Use keyframes to duck music by ~15dB whenever dialogue starts"
+        ]
+      },
+      {
+        "title": "Exercise 3: SFX & Noise Cleanup (10 minutes)",
+        "steps": [
+          "Add 2-3 sound effects to support visual actions",
+          "Apply noise reduction to dialogue if environment was noisy"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What was hardest about audio editing? How did music change the feel of the video?"
+  },
+  {
+    "title": "DAY 4: Transitions & Effects – Purposeful Movement",
+    "objective": "By the end of Day 4, you will understand how to use transitions and effects to support the story.",
+    "detailedContent": [
+      {
+        "title": "Less Is Often More",
+        "content": "Beginners love flashy transitions; pros use them sparingly. \n\n**Common Transitions:**\n- **Cut:** 90% of edits. Invisible.\n- **Cross Dissolve:** Passage of time / montages.\n- **Dip to Black:** End of scene / significant time jump.\n- **Fade In/Out:** Start/End of video.\n\n**Video Effects:**\n- **Stabilization:** Fix shaky footage.\n- **Speed Ramping:** Dramatic slow or fast motion within a clip."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=jW_V_-h28L7",
+      "title": "When to Use Transitions in Video Editing",
+      "description": "Explores the storytelling psychology behind every transition."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Basic Transitions (10 minutes)",
+        "steps": [
+          "Edit a 4-clip sequence using cross dissolves and dip-to-black",
+          "Compare the feeling of a cut vs. a dissolve"
+        ]
+      },
+      {
+        "title": "Exercise 2: Technical Fixes (10 minutes)",
+        "steps": [
+          "Apply stabilization to a shaky clip",
+          "Practice speed ramping: go from fast to slow motion smoothly"
+        ]
+      },
+      {
+        "title": "Exercise 3: The Mini-Montage (10 minutes)",
+        "steps": [
+          "Create a 15-second montage set to music using purposeful transitions"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How did speed changes affect the emotion of my clips?"
+  },
+  {
+    "title": "DAY 5: Color Correction & Grading",
+    "objective": "By the end of Day 5, you will be able to correct technical color issues and apply creative grades.",
+    "detailedContent": [
+      {
+        "title": "Color Tells the Story",
+        "content": "1. **Color Correction:** Technical fix for exposure and white balance.\n2. **Color Grading:** Creative manipulation to set a specific mood.\n\n**Key Concepts:**\n- **Exposure:** Overall brightness.\n- **Contrast:** Punchiness of the image.\n- **White Balance:** Removing unwanted color tints.\n- **Lift/Gamma/Gain:** Shadows, midtones, highlights."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=M9G9yEjzBWA",
+      "title": "Color Correction vs. Color Grading – Beginner's Guide",
+      "description": "DaVinci Resolve-based workflow that applies to any color tool."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Basic Color Correction (15 minutes)",
+        "steps": [
+          "Fix a clip that is too dark (Exposure)",
+          "Fix a clip that looks too yellow (White Balance)",
+          "Increase contrast on a 'flat' clip"
+        ]
+      },
+      {
+        "title": "Exercise 2: Creative Grading (15 minutes)",
+        "steps": [
+          "Push a clip toward a 'Warm' look (yellow/orange highlights)",
+          "Push a clip toward a 'Cool/Cinematic' look (teal/blue shadows)",
+          "Apply a pre-made LUT and adjust its strength"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What surprised me about color correction? Which creative grade felt most impactful?"
+  },
+  {
+    "title": "DAY 6: Text, Titles, & Motion Graphics",
+    "objective": "By the end of Day 6, you will be able to add professional graphics and captions to your videos.",
+    "detailedContent": [
+      {
+        "title": "Text as a Visual Tool",
+        "content": "**Types of Text:**\n1. **Titles:** Opening credits.\n2. **Lower Thirds:** Speaker names/titles.\n3. **Captions:** Subtitles for accessibility.\n\n**Legibility Tips:**\n- Match font to mood.\n- Use high contrast (outline or drop shadow).\n- Position in 'safe zones' (avoid edges/faces)."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=7XG3_p816_c",
+      "title": "How to Add Text & Titles in [Your Software]",
+      "description": "Learn to style and animate text for professional results."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Branding Your Video (15 minutes)",
+        "steps": [
+          "Create a centered title with a fade animation",
+          "Create a lower-third for a speaker with a slide-in animation",
+          "Add basic captions to a 10-second speech segment"
+        ]
+      },
+      {
+        "title": "Exercise 2: Keyframe Animation (15 minutes)",
+        "steps": [
+          "Animate a text box to grow from 0 to 100% scale",
+          "Animate a title flying in from the side using position keyframes"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How important do captions seem for social media? What graphic do I want to learn next?"
+  },
+  {
+    "title": "DAY 7: Final Project – Your First Masterpiece",
+    "objective": "By the end of Day 7, you will have planed, edited, and exported a complete 60‑second video.",
+    "detailedContent": [
+      {
+        "title": "The Final Assembly",
+        "content": "**Project Requirements:**\n- Multiple clips with J/L cuts.\n- Music with ducking.\n- Purposeful transitions.\n- Consistent color correction.\n- Title, lower-third, and end screen.\n- Exported at 1080p H.264."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=uKbe9p_fS0Y",
+      "title": "How I Edit a Video from Start to Finish",
+      "description": "A comprehensive look at the professional editing workflow in action."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The Final Project (60+ minutes)",
+        "steps": [
+          "Plan a 60-second video: vlog, tutorial, or montage",
+          "Import and Rough Cut your best clips",
+          "Refine with J/L cuts and Audio ducking",
+          "Apply Color Correction and Text Graphics",
+          "Export and watch your final 7-day milestone!"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Compare this to your Day 1 edit. What are the three biggest improvements?"
+  }
+]

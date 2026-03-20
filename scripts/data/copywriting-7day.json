@@ -1,0 +1,207 @@
+[
+  {
+    "title": "DAY 1: Foundations – What Is Copywriting & Why It Works",
+    "objective": "By the end of Day 1, you will understand what copywriting really is, the psychology behind it, and write your first piece of persuasive copy.",
+    "detailedContent": [
+      {
+        "title": "Copywriting Is Salesmanship in Print",
+        "content": "Copywriting is not “creative writing.” It's **salesmanship in print** – using words to get people to take action.\n\n**The Core Purpose of Copy:**\n- Grabs attention\n- Holds interest\n- Builds desire\n- Prompts action\n\n**Psychology of Persuasion:**\n- **Features vs. Benefits:** People don't buy mattresses; they buy a good night's sleep.\n- **Pain and Pleasure:** Move users away from a problem and toward a solution.\n- **Emotional Drivers:** Decisions are made emotionally and justified logically."
+      },
+      {
+        "title": "The AIDA Framework",
+        "content": "AIDA mirrors how people process information:\n1. **Attention:** Hook them with the first sentence.\n2. **Interest:** Share engaging details or relevance.\n3. **Desire:** Show the benefits and life after the solve.\n4. **Action:** A clear instruction on what to do next."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "The Ultimate Beginner's Guide to Copywriting",
+      "description": "Flux Academy breaks down the fundamentals of salesmanship in print."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Feature to Benefit Transformation (10 minutes)",
+        "steps": [
+          "Convert technical features (e.g., '5-minute setup') into human benefits (e.g., 'Spend more time working, less time configuring')"
+        ]
+      },
+      {
+        "title": "Exercise 2: Write Your First AIDA Copy (15 minutes)",
+        "steps": [
+          "Pick a simple object (like a mug or pen) and write an AIDA-structured paragraph for it",
+          "Apply the 'So What?' test to ensure you reached the deepest benefit"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How is copywriting different from what I expected? Which part of AIDA felt hardest?"
+  },
+  {
+    "title": "DAY 2: Headlines That Stop the Scroll",
+    "objective": "By the end of Day 2, you will be able to write magnetic headlines using proven formulas and techniques.",
+    "detailedContent": [
+      {
+        "title": "The Headline Is 80% of the Work",
+        "content": "Five times as many people read the headline as the body copy. If the headline fails, the rest is unread.\n\n**Proven Formulas:**\n- **How-To:** 'How to Write Headlines That Sell'\n- **Numbers:** '7 Ways to Double Your Productivity'\n- **Curiosity Gap:** 'The One Word That Changes Everything'\n- **Problem-Solve:** 'The Sleep‑Better‑Tonight Solution'\n\n**Best Practices:** Be specific, use numbers, and address the reader directly."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=R9pS6nshOaw",
+      "title": "19 Headline Formulas That Work",
+      "description": "Ray Edwards shares time-tested templates to grab immediate attention."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Headline Deconstruction (10 minutes)",
+        "steps": [
+          "Find 10 headlines in your inbox or YouTube and identify which formulas they use"
+        ]
+      },
+      {
+        "title": "Exercise 2: The Headline Challenge (20 minutes)",
+        "steps": [
+          "Pick one product and write 20 different headlines for it using various formulas",
+          "Select your top 3 and refine the winner for maximum impact"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What was hardest about writing 20 headlines for a single product?"
+  },
+  {
+    "title": "DAY 3: The Art of Storytelling in Copy",
+    "objective": "By the end of Day 3, you will be able to weave short, powerful stories into your copy to build connection.",
+    "detailedContent": [
+      {
+        "title": "Stories Are How Humans Think",
+        "content": "Stories stick because they trigger emotion and build trust. \n\n**The PAS Framework:**\n- **Problem:** State the user's struggle.\n- **Agitate:** Make the pain feel real (frustration, cost of inaction).\n- **Solve:** Present your solution as the path to relief.\n\n**Story Arc in Copy:** The customer is the Hero, the struggle is the Villain, and your product is the Guide."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "The Magical Science of Storytelling",
+      "description": "David JP Phillips explains why our brains are hardwired for narrative."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Write a PAS Sequence (15 minutes)",
+        "steps": [
+          "Choose a service and write a 3-paragraph Problem-Agitate-Solve sequence"
+        ]
+      },
+      {
+        "title": "Exercise 2: The Mini-Story (10 minutes)",
+        "steps": [
+          "Write a 4-sentence personal story that leads directly into a product benefit"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How does storytelling feel different from regular descriptive copy?"
+  },
+  {
+    "title": "DAY 4: Writing for Different Platforms & Formats",
+    "objective": "By the end of Day 4, you will understand how to adapt your copy for social, email, and web.",
+    "detailedContent": [
+      {
+        "title": "One Message, Many Formats",
+        "content": "**Social Media:** Conversational, visual-first, short.\n**Email:** Personalized, subject line is headline, one main CTA.\n**Website/Landing Pages:** Above-the-fold punch, scannable with bullets, heavy on social proof.\n**Ads:** Extremely concise, immediate hook, clear offer."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "How to Write for Different Platforms",
+      "description": "Alex Cattoni breaks down the differences between an Instagram post and a Sales Email."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Format Adaptation (20 minutes)",
+        "steps": [
+          "Write 4 variations of the same offer: a 150-character social post, a 3-paragraph email, a Landing Page hero section, and a 2-line ad"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Which platform felt most natural to write for? What was the hardest part of condensing the message?"
+  },
+  {
+    "title": "DAY 5: The Mechanics – Editing & Polishing",
+    "objective": "By the end of Day 5, you will be able to edit your copy ruthlessly to eliminate fluff.",
+    "detailedContent": [
+      {
+        "title": "Writing Is Rewriting",
+        "content": "The first draft is just you talking to yourself. The edit is where you sell.\n\n**The Editing Checklist:**\n- **Clarity:** Is it simple enough for a 12-year-old?\n- **Conciseness:** Can it be said in 20% fewer words?\n- **Flow:** Does it have a rhythm? Try the 'Read Aloud' test.\n- **Tone:** Is it consistent and brand-appropriate?\n- **Grammar:** Use tools like Grammarly but trust your ear."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "How to Edit Your Copy Like a Pro",
+      "description": "Practical tips for sharpening your sentences and killing your darlings."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Ruthless Reduction (15 minutes)",
+        "steps": [
+          "Take your Day 4 email draft and cut 30% of the word count without losing the meaning"
+        ]
+      },
+      {
+        "title": "Exercise 2: The Read-Aloud Test (5 minutes)",
+        "steps": [
+          "Record yourself reading your edited copy. Identify any spots where you stumble—those need more editing."
+        ]
+      }
+    ],
+    "reflectionPrompt": "What is the most common filler word I tend to use (just, very, really)?"
+  },
+  {
+    "title": "DAY 6: Crafting Compelling Calls to Action (CTAs)",
+    "objective": "By the end of Day 6, you will be able to write powerful CTAs that drive measurable results.",
+    "detailedContent": [
+      {
+        "title": "Tell Them Exactly What to Do Next",
+        "content": "In the absence of clear instructions, people do nothing.\n\n**Strong CTA Anatomy:**\n1. **Action Verb:** Get, Start, Claim, Download.\n2. **Immediate Benefit:** 'Get Your Free Guide' vs 'Download'.\n3. **Low Risk:** 'No credit card required'.\n4. **Urgency:** 'Offer expires tonight'.\n\n**The One-CTA Rule:** Every piece of copy should have ONE primary goal. Don't confuse the reader with too many choices."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "CTA Formulas That Work",
+      "description": "Ray Edwards shares templates for writing buttons and links that people actually click."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: CTA Variation Challenge (10 minutes)",
+        "steps": [
+          "Write 10 different CTA variations for a single free ebook offer"
+        ]
+      },
+      {
+        "title": "Exercise 2: Weak to Strong Transformation (10 minutes)",
+        "steps": [
+          "Improve 5 weak CTAs like 'Submit', 'Click Here', and 'Buy Now' using benefits and action verbs"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Why is 'Sign Up' a weaker call to action than 'Start My Free Trial'?"
+  },
+  {
+    "title": "DAY 7: Final Project – Complete Sales piece",
+    "objective": "By the end of Day 7, you will have written a complete, polished sales asset for your portfolio.",
+    "detailedContent": [
+      {
+        "title": "The Final Deadline",
+        "content": "**Final Project Options:**\n- **A: Short Sales Page:** Headline, body, testimonial, CTA.\n- **B: 3-Email Sequence:** Welcome, Story, Offer.\n- **C: Social Mini-Campaign:** 5 cohesive daily posts.\n\n**Final Checklist:**\n1. Magnetic headline.\n2. Benefit-driven (Features -> Benefits).\n3. Emotional storytelling element.\n4. Clear, strong CTA.\n5. Ruthlessly edited for clarity."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "The Perfect Sales Page Formula",
+      "description": "A start-to-finish walkthrough of writing a high-converting long-form page."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The Master Copy (90+ minutes)",
+        "steps": [
+          "Plan -> Draft -> Edit your final sales project",
+          "Assemble it into a clean document ready for a client or portfolio"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Looking back at Day 1, what is the biggest shift in how I think about writing?"
+  }
+]

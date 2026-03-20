@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Day 1: What is SEO?",
+    "content": "Search Engine Optimization explained.",
+    "videoUrl": "https://www.youtube.com/watch?v=S0T-U_iP0_Q",
+    "exercise": "Search for a keyword and identify the top 3 'Organic' results vs 'Paid' results."
+  },
+  {
+    "title": "Day 2: How Search Engines Work",
+    "content": "Crawling, Indexing, and Ranking.",
+    "videoUrl": "https://www.youtube.com/watch?v=k-I5N8_h9S0",
+    "exercise": "Explain what a 'crawler' (like Googlebot) does in your own words."
+  },
+  {
+    "title": "Day 3: Keyword Research Basics",
+    "content": "Finding what people search for.",
+    "videoUrl": "https://www.youtube.com/watch?v=2fWhV0g6n7E",
+    "exercise": "Use a tool like Google Keyword Planner or AnswerThePublic to find 5 keywords for 'vegan recipes'."
+  },
+  {
+    "title": "Day 4: Short-tail vs Long-tail Keywords",
+    "content": "Broad vs specific search queries.",
+    "videoUrl": "https://www.youtube.com/watch?v=N6R_J_vWreY",
+    "exercise": "Take a broad keyword like 'shoes' and find 3 long-tail variations."
+  },
+  {
+    "title": "Day 5: On-Page SEO: Title Tags",
+    "content": "The first thing users and search engines see.",
+    "videoUrl": "https://www.youtube.com/watch?v=0k60_G-Gv5c",
+    "exercise": "Write an optimized title tag for a blog post about 'Easy Yoga for Beginners'."
+  },
+  {
+    "title": "Day 6: Meta Descriptions",
+    "content": "Increasing click-through rates from search results.",
+    "videoUrl": "https://www.youtube.com/watch?v=8mG_J8v_p9Q",
+    "exercise": "Write a compelling meta description for the same yoga blog post (max 160 chars)."
+  },
+  {
+    "title": "Day 7: Heading Tags (H1-H6)",
+    "content": "Structuring content for readability and SEO.",
+    "videoUrl": "https://www.youtube.com/watch?v=48_wV2Q52fM",
+    "exercise": "Outline a blog post with one H1 and at least three H2 headings."
+  },
+  {
+    "title": "Day 8: Image SEO",
+    "content": "Alt text, file names, and compression.",
+    "videoUrl": "https://www.youtube.com/watch?v=M9G9yEjzBWA",
+    "exercise": "Take an image and rename the file and create optimized alt text for it."
+  },
+  {
+    "title": "Day 9: URL Structure",
+    "content": "Keeping it clean and descriptive.",
+    "videoUrl": "https://www.youtube.com/watch?v=7XG3_p816_c",
+    "exercise": "Rewrite a messy URL (e.g., example.com/p?123) to be SEO-friendly."
+  },
+  {
+    "title": "Day 10: Content Quality & Relevance",
+    "content": "Writing for users first.",
+    "videoUrl": "https://www.youtube.com/watch?v=vV689849E2o",
+    "exercise": "Analyze a high-ranking article and note 3 things that make it helpful for the reader."
+  },
+  {
+    "title": "Day 11: Technical SEO: XML Sitemaps",
+    "content": "Mapping your site for crawlers.",
+    "videoUrl": "https://www.youtube.com/watch?v=x9m6-G-jM78",
+    "exercise": "Find the sitemap of a website (usually example.com/sitemap.xml)."
+  },
+  {
+    "title": "Day 12: Technical SEO: Robots.txt",
+    "content": "Telling crawlers where not to go.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M7F-A-jF9k",
+    "exercise": "Explain why you might want to 'Disallow' certain pages from being indexed."
+  },
+  {
+    "title": "Day 13: Technical SEO: Page Speed",
+    "content": "The impact of load time on ranking.",
+    "videoUrl": "https://www.youtube.com/watch?v=iE1YvN_k9fM",
+    "exercise": "Test a website using Google PageSpeed Insights and identify one area for improvement."
+  },
+  {
+    "title": "Day 14: Mobile-First Indexing",
+    "content": "Why mobile optimization is no longer optional.",
+    "videoUrl": "https://www.youtube.com/watch?v=YwLnkKkS-kI",
+    "exercise": "Check a website on your phone and identify any usability issues (buttons too small, etc.)."
+  },
+  {
+    "title": "Day 15: Off-Page SEO: Backlinks Basics",
+    "content": "Building authority through others.",
+    "videoUrl": "https://www.youtube.com/watch?v=W1pL8D5-R_c",
+    "exercise": "In your own words, explain the difference between a 'Do-follow' and 'No-follow' link."
+  },
+  {
+    "title": "Day 16: Link Building Strategies",
+    "content": "Guest posting, outreach, and great content.",
+    "videoUrl": "https://www.youtube.com/watch?v=vH4Y9A_jO1Y",
+    "exercise": "Draft an outreach email to a blog asking for a guest post opportunity."
+  },
+  {
+    "title": "Day 17: Local SEO Basics",
+    "content": "Ranking for 'near me' searches.",
+    "videoUrl": "https://www.youtube.com/watch?v=jW_V_-h28L8",
+    "exercise": "Search for a local business and identify the key factors in their Google Business Profile."
+  },
+  {
+    "title": "Day 18: Google Search Console Intro",
+    "content": "Monitoring your site's performance.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M_j-kF-k8Y",
+    "exercise": "Research 3 pieces of information you can get from Google Search Console."
+  },
+  {
+    "title": "Day 19: Google Analytics Basics (GA4)",
+    "content": "Understanding user behavior on your site.",
+    "videoUrl": "https://www.youtube.com/watch?v=H7-G-v9-I88",
+    "exercise": "Define what a 'Conversion' is in the context of Google Analytics."
+  },
+  {
+    "title": "Day 20: User Intent Match",
+    "content": "Satisfying the user's goal (Informational, Navigational, Transactional).",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F9pY",
+    "exercise": "Choose 3 keywords and identify the likely 'Intent' behind each."
+  },
+  {
+    "title": "Day 21: Schema Markup & Rich Snippets",
+    "content": "Helping search engines understand your data.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F8z3",
+    "exercise": "Find a search result that has stars (rating) or a recipe preview and identify it as a rich snippet."
+  },
+  {
+    "title": "Day 22: Content Audit Basics",
+    "content": "Updating and improving old content.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F7y4",
+    "exercise": "Pick an old blog post and identify 3 ways to make it more relevant today."
+  },
+  {
+    "title": "Day 23: Competitor Analysis",
+    "content": "Learning from what works for others.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F6x5",
+    "exercise": "Identify the top 3 competitors for a fictional 'coffee subscription' brand."
+  },
+  {
+    "title": "Day 24: SEO for E-commerce",
+    "content": "Optimizing product pages and categories.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F5w6",
+    "exercise": "Write an SEO-friendly product title and description for a pair of running shoes."
+  },
+  {
+    "title": "Day 25: Future of SEO: AI Search",
+    "content": "How ChatGPT and Gemini are changing search.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F4v7",
+    "exercise": "Ask an AI a question and compare the answer to the top Google result."
+  },
+  {
+    "title": "Day 26: Building an SEO Strategy",
+    "content": "Putting it all together into a plan.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F3u8",
+    "exercise": "Create a 3-month SEO roadmap for a new blog about 'Remote Work'."
+  },
+  {
+    "title": "Day 27: Measuring SEO ROI",
+    "content": "Proving the value of your work.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F2t9",
+    "exercise": "Calculate the potential value of 1,000 visitors if your conversion rate is 2% and average order value is $50."
+  },
+  {
+    "title": "Day 28: SEO Ethics and 'Black Hat' SEO",
+    "content": "What to avoid to keep your site safe.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-F1sg",
+    "exercise": "List 3 'Black Hat' techniques and explain why they are risky."
+  },
+  {
+    "title": "Day 29: Final Project: The SEO Audit",
+    "content": "Executing a full page audit.",
+    "videoUrl": "https://www.youtube.com/watch?v=vM-j_k-F0r1",
+    "exercise": "Perform a complete On-page SEO audit for a single page of any website."
+  },
+  {
+    "title": "Day 30: Staying Current in SEO",
+    "content": "Algorithm updates and industry news.",
+    "videoUrl": "https://www.youtube.com/watch?v=7M-j_k-Fz92",
+    "exercise": "Follow 2 major SEO news sites (e.g., Search Engine Journal, Moz Blog)."
+  }
+]

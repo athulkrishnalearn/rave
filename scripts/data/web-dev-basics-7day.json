@@ -1,0 +1,213 @@
+[
+  {
+    "title": "DAY 1: How the Web Works & Your First HTML Page",
+    "objective": "By the end of Day 1, you will understand how the web works, have your coding environment set up, and create your first HTML page.",
+    "detailedContent": [
+      {
+        "title": "The Web Demystified",
+        "content": "When you visit a URL, your browser performs a DNS lookup, sends an HTTP request, and receives a response containing HTML, CSS, and JS.\n\n**The Core Three:**\n- **HTML:** Structure (The Skeleton).\n- **CSS:** Styling (The Paint/Furniture).\n- **JavaScript:** Interactivity (The Plumbing/Electricity)."
+      },
+      {
+        "title": "Your First Tags",
+        "content": "HTML uses tags like `<h1>`, `<p>`, `<a>`, and `<img>`. Attributes like `href` and `src` provide extra information. Every page starts with a `<!DOCTYPE html>` and wraps content in `<html>`, `<head>`, and `<body>` tags."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=UB1O30fS-EE",
+      "title": "HTML Crash Course for Absolute Beginners",
+      "description": "Traversy Media provides a comprehensive look at HTML tags, attributes, and page structure."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Environment Setup (5 minutes)",
+        "steps": [
+          "Install VS Code and create your first 'index.html' file"
+        ]
+      },
+      {
+        "title": "Exercise 2: Personal Intro Page (15 minutes)",
+        "steps": [
+          "Create a page with an H1 for your name, a paragraph introduction, and a list of 3 hobbies",
+          "Include an image and a link to your favorite website"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How does it feel to see your own code rendered as a real webpage in a browser?"
+  },
+  {
+    "title": "DAY 2: Styling with CSS – Making Things Beautiful",
+    "objective": "By the end of Day 2, you will be able to style your HTML with colors, fonts, spacing, and layouts.",
+    "detailedContent": [
+      {
+        "title": "CSS Foundations",
+        "content": "CSS selectors (Element, Class, ID) allow you to target specific HTML. Properties like `color`, `font-family`, and `background-color` transform the look.\n\n**The Box Model:** Every element is a box with Content, Padding, Border, and Margin. Understanding the difference between these is the key to mastering layout."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+      "title": "CSS Crash Course for beginners",
+      "description": "Learn how to use selectors, the box model, and layout properties to design your pages."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The Styling Challenge (20 minutes)",
+        "steps": [
+          "Create a 'style.css' file and link it to your HTML",
+          "Change the font of your headings, and add a background color and padding to your hobby list"
+        ]
+      },
+      {
+        "title": "Exercise 2: Box Model Experiment (10 minutes)",
+        "steps": [
+          "Add a border to your image and use 'margin: 0 auto' to center a container div"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What is the biggest difference you noticed between 'margin' and 'padding' when styling your list?"
+  },
+  {
+    "title": "DAY 3: Responsive Design & Flexbox",
+    "objective": "By the end of Day 3, you will create layouts that adapt to different screen sizes using Flexbox and media queries.",
+    "detailedContent": [
+      {
+        "title": "Modern Layouts",
+        "content": "**Flexbox:** Use `display: flex` on a container to easily align child items. Properties like `justify-content` and `align-items` handle the spacing.\n\n**Responsive Strategy:** Use media queries (`@media`) to change your layout when the screen width gets smaller. Always design mobile-first for the best user experience."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=k32voqQhHiM",
+      "title": "Learn Flexbox in 15 Minutes",
+      "description": "Web Dev Simplified explains the core concepts of the Flexbox layout model."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Responsive Navigation (15 minutes)",
+        "steps": [
+          "Build a horizontal nav bar that stacks vertically on mobile screens using a media query"
+        ]
+      },
+      {
+        "title": "Exercise 2: Card Layout (15 minutes)",
+        "steps": [
+          "Create 3 cards using Flexbox that wrap to new lines as the window shrinks"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Why is it important to test your website on a phone as well as a desktop?"
+  },
+  {
+    "title": "DAY 4: Introduction to JavaScript – Interactivity",
+    "objective": "By the end of Day 4, you will be able to add JavaScript to create simple interactive features.",
+    "detailedContent": [
+      {
+        "title": "Bringing the Page to Life",
+        "content": "JavaScript handles behavior. You can select elements using `document.querySelector`, listen for events like `click`, and change content with `.textContent`.\n\n**Variables & Functions:** Store data in `let` or `const`, and group actions into reusable `function` blocks."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+      "title": "JavaScript Crash Course for Beginners",
+      "description": "An introduction to variables, functions, and manipulating the Document Object Model (DOM)."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Dark Mode Toggle (15 minutes)",
+        "steps": [
+          "Write a script that toggles a 'dark-mode' class on the body when a button is clicked"
+        ]
+      },
+      {
+        "title": "Exercise 2: Simple Counter (15 minutes)",
+        "steps": [
+          "Create two buttons that increment and decrement a displayed number on the screen"
+        ]
+      }
+    ],
+    "reflectionPrompt": "What was the most challenging part of getting your first JavaScript function to run?"
+  },
+  {
+    "title": "DAY 5: Working with Forms & User Input",
+    "objective": "By the end of Day 5, you will be able to handle form submissions and validate user input.",
+    "detailedContent": [
+      {
+        "title": "Communication with Users",
+        "content": "Forms are essential for data collection. Use `event.preventDefault()` to stop the page from reloading on submit. You can then validate the values (like checking for an '@' in an email) before 'sending' the data."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=fOTkpSkeS_0",
+      "title": "Learn HTML Forms in 25 Minutes",
+      "description": "Covers input types, labels, and basic form validation techniques."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: Contact Form (15 minutes)",
+        "steps": [
+          "Build a form with name, email, and message fields, and style it with CSS"
+        ]
+      },
+      {
+        "title": "Exercise 2: JavaScript Validation (15 minutes)",
+        "steps": [
+          "Display a success message only if all form fields are filled out correctly"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Why is client-side validation important for user experience, even if the server does its own check?"
+  },
+  {
+    "title": "DAY 6: Hosting & Going Live",
+    "objective": "By the end of Day 6, you will deploy your website live for the world to see.",
+    "detailedContent": [
+      {
+        "title": "Deploying Your Code",
+        "content": "Your site stays on your computer until you host it. **GitHub Pages** and **Netlify** are popular free options for static sites. Deployment is as simple as pushing your code to a repository or dragging a folder into a dashboard."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=SKXkC4S0S9w",
+      "title": "How to Host a Website for Free",
+      "description": "A step-by-step guide to using GitHub Pages and Netlify to share your projects."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: GitHub Pages Setup (20 minutes)",
+        "steps": [
+          "Create a GitHub account, upload your files, and enable GitHub Pages in the settings"
+        ]
+      },
+      {
+        "title": "Exercise 2: Go Live! (10 minutes)",
+        "steps": [
+          "Share your new live URL with a friend or your prompt journal"
+        ]
+      }
+    ],
+    "reflectionPrompt": "How does it feel knowing your site is now accessible to anyone with an internet connection?"
+  },
+  {
+    "title": "DAY 7: Final Project – Multi-Page Responsive Site",
+    "objective": "By the end of Day 7, you will build and deploy a complete multi-page website from scratch.",
+    "detailedContent": [
+      {
+        "title": "The Culmination",
+        "content": "**Final Requirements:**\n- 3+ HTML pages linked by a navigation bar.\n- Shared external CSS for a consistent look.\n- Responsive Flexbox layout.\n- At least one interactive JS feature (e.g., Form validation or Dark mode)."
+      }
+    ],
+    "video": {
+      "url": "https://www.youtube.com/watch?v=ntDjjLYSDVA",
+      "title": "Build a Responsive Website in 1 Hour",
+      "description": "Traversy Media shows you how to bring all the pieces together into a professional project."
+    },
+    "exercises": [
+      {
+        "title": "Exercise 1: The Master Launch (90+ minutes)",
+        "steps": [
+          "Plan -> Code -> Style -> Interactivity -> Deploy your final site",
+          "Ensure it looks great on both your laptop and your smartphone"
+        ]
+      }
+    ],
+    "reflectionPrompt": "Look back at Day 1. What was the single most important concept you mastered this week?"
+  }
+]
